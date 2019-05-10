@@ -28,7 +28,7 @@ services:
     ports:
       - "8181:8080"
     volumes:
-      - ./workspace:/deegree
+      - ./srs/5972/workspace:/deegree
     restart: always
     environment:
       DEEGREE_WORKSPACE_ROOT: /deegree

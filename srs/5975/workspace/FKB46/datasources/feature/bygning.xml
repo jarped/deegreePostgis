@@ -1,0 +1,1346 @@
+<SQLFeatureStore configVersion="3.1.0" xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/4.61" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2">
+  <JDBCConnId>JDBC</JDBCConnId>
+  <StorageCRS srid="5975" dim="3D">EPSG:5975</StorageCRS>
+  <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bygning/4.61/FKB-Bygning461.xsd</GMLSchema>
+  <FeatureTypeMapping name="app:AnnenBygning" table="fkb_bygning.app_annenbygning">
+    <FIDMapping prefix="APP_ANNENBYGNING_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Complex path="app:område">
+      <Primitive path="@nilReason" mapping="app_område_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_område_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_område_attr_owns"/>
+      <Geometry path="." mapping="app_område_value"/>
+    </Complex>
+    <Complex path="app:posisjon">
+      <Primitive path="@nilReason" mapping="app_posisjon_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_posisjon_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_posisjon_attr_owns"/>
+      <Geometry path="." mapping="app_posisjon_value"/>
+    </Complex>
+    <Primitive path="app:bygningstype" mapping="app_bygningstype"/>
+    <Primitive path="app:medium" mapping="app_medium"/>
+    <Primitive path="app:innmålingsstatus" mapping="app_innmålingsstatus"/>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:Arkade" table="fkb_bygning.app_arkade">
+    <FIDMapping prefix="APP_ARKADE_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Primitive path="app:treDNivå" mapping="app_trednivå"/>
+    <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:Bygning" table="fkb_bygning.app_bygning">
+    <FIDMapping prefix="APP_BYGNING_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Complex path="app:område">
+      <Primitive path="@nilReason" mapping="app_område_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_område_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_område_attr_owns"/>
+      <Geometry path="." mapping="app_område_value"/>
+    </Complex>
+    <Complex path="app:posisjon">
+      <Primitive path="@nilReason" mapping="app_posisjon_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_posisjon_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_posisjon_attr_owns"/>
+      <Geometry path="." mapping="app_posisjon_value"/>
+    </Complex>
+    <Primitive path="app:bygningsnummer" mapping="app_bygningsnummer"/>
+    <Primitive path="app:bygningstype" mapping="app_bygningstype"/>
+    <Primitive path="app:bygningsstatus" mapping="app_bygningsstatus"/>
+    <Complex path="app:kommunenummer">
+      <Primitive path="text()" mapping="app_kommunenummer"/>
+      <Primitive path="@codeSpace" mapping="app_kommunenummer_attr_codespace"/>
+    </Complex>
+    <Primitive path="app:innmålingsstatus" mapping="app_innmålingsstatus"/>
+    <Primitive path="app:medium" mapping="app_medium"/>
+    <Complex path="app:sefrakident">
+      <Join table="fkb_bygning.app_bygning_app_sefrakident" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
+      <Complex path="app:SefrakIdent">
+        <Complex path="app:kommune">
+          <Primitive path="text()" mapping="app_sefrakident_app_kommune"/>
+          <Primitive path="@codeSpace" mapping="app_sefrakident_app_kommune_attr_codespace"/>
+        </Complex>
+        <Primitive path="app:registreringskretsnummer" mapping="app_sefrakident_app_registreringskretsnummer"/>
+        <Primitive path="app:husløpenummer" mapping="app_sefrakident_app_husløpenummer"/>
+      </Complex>
+    </Complex>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:BygningBru" table="fkb_bygning.app_bygningbru">
+    <FIDMapping prefix="APP_BYGNINGBRU_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:BygningsavgrensningTiltak" table="fkb_bygning.app_bygningsavgrensningtiltak">
+    <FIDMapping prefix="APP_BYGNINGSAVGRENSNINGTILTAK_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+    <Primitive path="app:medium" mapping="app_medium"/>
+    <Primitive path="app:høyde" mapping="app_høyde"/>
+    <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
+    <Primitive path="app:høydeoverbakken" mapping="app_høydeoverbakken"/>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:Bygningsdelelinje" table="fkb_bygning.app_bygningsdelelinje">
+    <FIDMapping prefix="APP_BYGNINGSDELELINJE_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+    <Primitive path="app:treDNivå" mapping="app_trednivå"/>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:Bygningslinje" table="fkb_bygning.app_bygningslinje">
+    <FIDMapping prefix="APP_BYGNINGSLINJE_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Primitive path="app:treDNivå" mapping="app_trednivå"/>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:Fasadeliv" table="fkb_bygning.app_fasadeliv">
+    <FIDMapping prefix="APP_FASADELIV_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+    <Primitive path="app:medium" mapping="app_medium"/>
+    <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
+    <Primitive path="app:skalAvgrenseBygning" mapping="app_skalavgrensebygning"/>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:FiktivBygningsavgrensning" table="fkb_bygning.app_fiktivbygningsavgrensning">
+    <FIDMapping prefix="APP_FIKTIVBYGNINGSAVGRENSNING_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+    <Primitive path="app:medium" mapping="app_medium"/>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:Grunnmur" table="fkb_bygning.app_grunnmur">
+    <FIDMapping prefix="APP_GRUNNMUR_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+    <Primitive path="app:medium" mapping="app_medium"/>
+    <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:Hjelpelinje3D" table="fkb_bygning.app_hjelpelinje3d">
+    <FIDMapping prefix="APP_HJELPELINJE3D_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Primitive path="app:treDNivå" mapping="app_trednivå"/>
+    <Complex path="app:senterlinje">
+      <Primitive path="@nilReason" mapping="app_senterlinje_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_senterlinje_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_senterlinje_attr_owns"/>
+      <Geometry path="." mapping="app_senterlinje_value"/>
+    </Complex>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:Hjelpepunkt3D" table="fkb_bygning.app_hjelpepunkt3d">
+    <FIDMapping prefix="APP_HJELPEPUNKT3D_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Primitive path="app:treDNivå" mapping="app_trednivå"/>
+    <Complex path="app:posisjon">
+      <Primitive path="@nilReason" mapping="app_posisjon_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_posisjon_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_posisjon_attr_owns"/>
+      <Geometry path="." mapping="app_posisjon_value"/>
+    </Complex>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:KantUtsnitt" table="fkb_bygning.app_kantutsnitt">
+    <FIDMapping prefix="APP_KANTUTSNITT_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:Låvebru" table="fkb_bygning.app_låvebru">
+    <FIDMapping prefix="APP_LÅVEBRU_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:Mønelinje" table="fkb_bygning.app_mønelinje">
+    <FIDMapping prefix="APP_MØNELINJE_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Primitive path="app:treDNivå" mapping="app_trednivå"/>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:Portrom" table="fkb_bygning.app_portrom">
+    <FIDMapping prefix="APP_PORTROM_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Primitive path="app:treDNivå" mapping="app_trednivå"/>
+    <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:TakMur" table="fkb_bygning.app_takmur">
+    <FIDMapping prefix="APP_TAKMUR_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Primitive path="app:treDNivå" mapping="app_trednivå"/>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:Takkant" table="fkb_bygning.app_takkant">
+    <FIDMapping prefix="APP_TAKKANT_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+    <Primitive path="app:medium" mapping="app_medium"/>
+    <Primitive path="app:treDNivå" mapping="app_trednivå"/>
+    <Primitive path="app:takskjegg" mapping="app_takskjegg"/>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:Takoverbygg" table="fkb_bygning.app_takoverbygg">
+    <FIDMapping prefix="APP_TAKOVERBYGG_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Complex path="app:område">
+      <Primitive path="@nilReason" mapping="app_område_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_område_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_område_attr_owns"/>
+      <Geometry path="." mapping="app_område_value"/>
+    </Complex>
+    <Complex path="app:posisjon">
+      <Primitive path="@nilReason" mapping="app_posisjon_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_posisjon_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_posisjon_attr_owns"/>
+      <Geometry path="." mapping="app_posisjon_value"/>
+    </Complex>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:TakoverbyggKant" table="fkb_bygning.app_takoverbyggkant">
+    <FIDMapping prefix="APP_TAKOVERBYGGKANT_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:Takplatå" table="fkb_bygning.app_takplatå">
+    <FIDMapping prefix="APP_TAKPLATÅ_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Primitive path="app:treDNivå" mapping="app_trednivå"/>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:TakplatåTopp" table="fkb_bygning.app_takplatåtopp">
+    <FIDMapping prefix="APP_TAKPLATÅTOPP_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Primitive path="app:treDNivå" mapping="app_trednivå"/>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:Taksprang" table="fkb_bygning.app_taksprang">
+    <FIDMapping prefix="APP_TAKSPRANG_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Primitive path="app:treDNivå" mapping="app_trednivå"/>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:TaksprangBunn" table="fkb_bygning.app_taksprangbunn">
+    <FIDMapping prefix="APP_TAKSPRANGBUNN_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Primitive path="app:treDNivå" mapping="app_trednivå"/>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:TrappBygg" table="fkb_bygning.app_trappbygg">
+    <FIDMapping prefix="APP_TRAPPBYGG_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+  </FeatureTypeMapping>
+  <FeatureTypeMapping name="app:Veranda" table="fkb_bygning.app_veranda">
+    <FIDMapping prefix="APP_VERANDA_">
+      <Column name="attr_gml_id" type="string"/>
+      <UUIDGenerator/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="gml_identifier"/>
+      <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
+    </Complex>
+    <Complex path="app:identifikasjon">
+      <Complex path="app:Identifikasjon">
+        <Primitive path="app:lokalId" mapping="app_identifikasjon_app_identifikasjon_app_lokalid"/>
+        <Primitive path="app:navnerom" mapping="app_identifikasjon_app_identifikasjon_app_navnerom"/>
+        <Primitive path="app:versjonId" mapping="app_identifikasjon_app_identifikasjon_app_versjonid"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:registreringsversjon">
+      <Complex path="app:Registreringsversjon">
+        <Primitive path="app:produkt" mapping="app_registreringsversjon_app_registreringsversjon_app_produkt"/>
+        <Primitive path="app:versjon" mapping="app_registreringsversjon_app_registreringsversjon_app_versjon"/>
+        <Primitive path="app:undertype" mapping="app_registreringsversjon_app_registreringsversjon_app_undertype"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:verifiseringsdato" mapping="app_verifiseringsdato"/>
+    <Primitive path="app:oppdateringsdato" mapping="app_oppdateringsdato"/>
+    <Primitive path="app:informasjon" mapping="app_informasjon"/>
+    <Primitive path="app:prosesshistorie" mapping="app_prosesshistorie"/>
+    <Complex path="app:kopidata">
+      <Complex path="app:Kopidata">
+        <Primitive path="app:områdeId" mapping="app_kopidata_app_kopidata_app_områdeid"/>
+        <Primitive path="app:originalDatavert" mapping="app_kopidata_app_kopidata_app_originaldatavert"/>
+        <Primitive path="app:kopidato" mapping="app_kopidata_app_kopidata_app_kopidato"/>
+      </Complex>
+    </Complex>
+    <Complex path="app:kvalitet">
+      <Complex path="app:Posisjonskvalitet">
+        <Primitive path="app:målemetode" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetode"/>
+        <Primitive path="app:nøyaktighet" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighet"/>
+        <Primitive path="app:synbarhet" mapping="app_kvalitet_app_posisjonskvalitet_app_synbarhet"/>
+        <Primitive path="app:målemetodeHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_målemetodehøyde"/>
+        <Primitive path="app:nøyaktighetHøyde" mapping="app_kvalitet_app_posisjonskvalitet_app_nøyaktighethøyde"/>
+      </Complex>
+    </Complex>
+    <Primitive path="app:datafangstdato" mapping="app_datafangstdato"/>
+    <Complex path="app:grense">
+      <Primitive path="@nilReason" mapping="app_grense_attr_nilreason"/>
+      <Primitive path="@gml:remoteSchema" mapping="app_grense_attr_gml_remoteschema"/>
+      <Primitive path="@owns" mapping="app_grense_attr_owns"/>
+      <Geometry path="." mapping="app_grense_value"/>
+    </Complex>
+    <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
+    <Primitive path="app:medium" mapping="app_medium"/>
+  </FeatureTypeMapping>
+</SQLFeatureStore>

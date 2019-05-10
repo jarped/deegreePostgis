@@ -34,7 +34,7 @@ CREATE TABLE app_arealressursflate (
     app_grunnforhold text,
     app_kartstandard text,
     CONSTRAINT app_arealressursflate_pkey PRIMARY KEY (attr_gml_id)
-); SELECT ADDGEOMETRYCOLUMN('', 'app_arealressursflate','app_område_value','25832','GEOMETRY', 3); SELECT ADDGEOMETRYCOLUMN('', 'app_arealressursflate','app_posisjon_value','25832','GEOMETRY', 3); CREATE TABLE app_arealressursgrense (
+); SELECT ADDGEOMETRYCOLUMN('', 'app_arealressursflate','app_område_value','25833','GEOMETRY', 2); SELECT ADDGEOMETRYCOLUMN('', 'app_arealressursflate','app_posisjon_value','25833','GEOMETRY', 2); CREATE TABLE app_arealressursgrense (
     attr_gml_id text,
     gml_identifier text,
     gml_identifier_attr_codespace text,
@@ -61,7 +61,7 @@ CREATE TABLE app_arealressursflate (
     app_grense_attr_owns boolean,
     app_avgrensingtype text,
     CONSTRAINT app_arealressursgrense_pkey PRIMARY KEY (attr_gml_id)
-); SELECT ADDGEOMETRYCOLUMN('', 'app_arealressursgrense','app_grense_value','25832','GEOMETRY', 3); CREATE TABLE app_arealressursgrensefiktiv (
+); SELECT ADDGEOMETRYCOLUMN('', 'app_arealressursgrense','app_grense_value','25833','GEOMETRY', 2); CREATE TABLE app_arealressursgrensefiktiv (
     attr_gml_id text,
     gml_identifier text,
     gml_identifier_attr_codespace text,
@@ -83,7 +83,7 @@ CREATE TABLE app_arealressursflate (
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
     CONSTRAINT app_arealressursgrensefiktiv_pkey PRIMARY KEY (attr_gml_id)
-); SELECT ADDGEOMETRYCOLUMN('', 'app_arealressursgrensefiktiv','app_grense_value','25832','GEOMETRY', 3); CREATE TABLE app_kantutsnitt (
+); SELECT ADDGEOMETRYCOLUMN('', 'app_arealressursgrensefiktiv','app_grense_value','25833','GEOMETRY', 2); CREATE TABLE app_kantutsnitt (
     attr_gml_id text,
     gml_identifier text,
     gml_identifier_attr_codespace text,
@@ -94,4 +94,4 @@ CREATE TABLE app_arealressursflate (
     app_identifikasjon_app_identifikasjon_app_navnerom text,
     app_identifikasjon_app_identifikasjon_app_versjonid text,
     CONSTRAINT app_kantutsnitt_pkey PRIMARY KEY (attr_gml_id)
-); SELECT ADDGEOMETRYCOLUMN('', 'app_kantutsnitt','app_grense_value','25832','GEOMETRY', 3)
+); SELECT ADDGEOMETRYCOLUMN('', 'app_kantutsnitt','app_grense_value','25833','GEOMETRY', 2)
