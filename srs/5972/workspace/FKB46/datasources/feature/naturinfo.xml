@@ -1,9 +1,9 @@
-<SQLFeatureStore configVersion="3.1.0" xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Naturinfo/4.6/" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2">
+<SQLFeatureStore xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Naturinfo/4.6/" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" configVersion="3.1.0" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd">
   <JDBCConnId>JDBC</JDBCConnId>
   <StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
   <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Naturinfo/4.6/FKB-Naturinfo46.xsd</GMLSchema>
   <FeatureTypeMapping name="app:Allé" table="fkb_naturinfo.app_allé">
-    <FIDMapping prefix="APP_ALLÉ_">
+    <FIDMapping prefix="app.Allé_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -56,7 +56,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Hekk" table="fkb_naturinfo.app_hekk">
-    <FIDMapping prefix="APP_HEKK_">
+    <FIDMapping prefix="app.Hekk_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -109,7 +109,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:InnmåltTre" table="fkb_naturinfo.app_innmålttre">
-    <FIDMapping prefix="APP_INNMÅLTTRE_">
+    <FIDMapping prefix="app.InnmåltTre_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -162,7 +162,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:KantUtsnitt" table="fkb_naturinfo.app_kantutsnitt">
-    <FIDMapping prefix="APP_KANTUTSNITT_">
+    <FIDMapping prefix="app.KantUtsnitt_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -185,7 +185,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Stein" table="fkb_naturinfo.app_stein">
-    <FIDMapping prefix="APP_STEIN_">
+    <FIDMapping prefix="app.Stein_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -233,7 +233,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:SteinOmriss" table="fkb_naturinfo.app_steinomriss">
-    <FIDMapping prefix="APP_STEINOMRISS_">
+    <FIDMapping prefix="app.SteinOmriss_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>

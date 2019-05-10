@@ -1,9 +1,9 @@
-<SQLFeatureStore configVersion="3.1.0" xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Servitutt/4.6" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2">
+<SQLFeatureStore xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Servitutt/4.6" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" configVersion="3.1.0" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd">
   <JDBCConnId>JDBC</JDBCConnId>
   <StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
   <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Servitutt/4.6/FKB-Servitutt46.xsd</GMLSchema>
   <FeatureTypeMapping name="app:KantUtsnitt" table="fkb_servitutt.app_kantutsnitt">
-    <FIDMapping prefix="APP_KANTUTSNITT_">
+    <FIDMapping prefix="app.KantUtsnitt_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -26,7 +26,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Servitutt" table="fkb_servitutt.app_servitutt">
-    <FIDMapping prefix="APP_SERVITUTT_">
+    <FIDMapping prefix="app.Servitutt_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -93,7 +93,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Servituttgrense" table="fkb_servitutt.app_servituttgrense">
-    <FIDMapping prefix="APP_SERVITUTTGRENSE_">
+    <FIDMapping prefix="app.Servituttgrense_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -138,7 +138,7 @@
     <Primitive path="app:jordskifterettenSaksnummer" mapping="app_jordskifterettensaksnummer"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:ServituttgrenseFiktiv" table="fkb_servitutt.app_servituttgrensefiktiv">
-    <FIDMapping prefix="APP_SERVITUTTGRENSEFIKTIV_">
+    <FIDMapping prefix="app.ServituttgrenseFiktiv_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>

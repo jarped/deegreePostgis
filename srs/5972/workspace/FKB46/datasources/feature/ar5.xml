@@ -1,9 +1,9 @@
-<SQLFeatureStore configVersion="3.1.0" xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Ar5/4.6" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2">
+<SQLFeatureStore xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Ar5/4.6" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" configVersion="3.1.0" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd">
   <JDBCConnId>JDBC</JDBCConnId>
   <StorageCRS srid="25832" dim="2D">EPSG:25832</StorageCRS>
   <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Ar5/4.6/FKB-Ar546.xsd</GMLSchema>
   <FeatureTypeMapping name="app:ArealressursFlate" table="fkb_ar5.app_arealressursflate">
-    <FIDMapping prefix="APP_AREALRESSURSFLATE_">
+    <FIDMapping prefix="app.ArealressursFlate_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -64,7 +64,7 @@
     <Primitive path="app:kartstandard" mapping="app_kartstandard"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:ArealressursGrense" table="fkb_ar5.app_arealressursgrense">
-    <FIDMapping prefix="APP_AREALRESSURSGRENSE_">
+    <FIDMapping prefix="app.ArealressursGrense_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -115,7 +115,7 @@
     <Primitive path="app:avgrensingType" mapping="app_avgrensingtype"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:ArealressursGrenseFiktiv" table="fkb_ar5.app_arealressursgrensefiktiv">
-    <FIDMapping prefix="APP_AREALRESSURSGRENSEFIKTIV_">
+    <FIDMapping prefix="app.ArealressursGrenseFiktiv_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -157,7 +157,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:KantUtsnitt" table="fkb_ar5.app_kantutsnitt">
-    <FIDMapping prefix="APP_KANTUTSNITT_">
+    <FIDMapping prefix="app.KantUtsnitt_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>

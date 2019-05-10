@@ -1,9 +1,9 @@
-<SQLFeatureStore configVersion="3.1.0" xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Lufthavn/4.6/" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2">
+<SQLFeatureStore xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Lufthavn/4.6/" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" configVersion="3.1.0" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd">
   <JDBCConnId>JDBC</JDBCConnId>
   <StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
   <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Lufthavn/4.6/FKB-Lufthavn46.xsd</GMLSchema>
   <FeatureTypeMapping name="app:Lufthavnlys" table="fkb_lufthavn.app_lufthavnlys">
-    <FIDMapping prefix="APP_LUFTHAVNLYS_">
+    <FIDMapping prefix="app.Lufthavnlys_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -55,7 +55,7 @@
     <Primitive path="app:lufthavnlystype" mapping="app_lufthavnlystype"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Plattformgrense" table="fkb_lufthavn.app_plattformgrense">
-    <FIDMapping prefix="APP_PLATTFORMGRENSE_">
+    <FIDMapping prefix="app.Plattformgrense_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -106,7 +106,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Rullebanegrense" table="fkb_lufthavn.app_rullebanegrense">
-    <FIDMapping prefix="APP_RULLEBANEGRENSE_">
+    <FIDMapping prefix="app.Rullebanegrense_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -157,7 +157,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Taksebanegrense" table="fkb_lufthavn.app_taksebanegrense">
-    <FIDMapping prefix="APP_TAKSEBANEGRENSE_">
+    <FIDMapping prefix="app.Taksebanegrense_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>

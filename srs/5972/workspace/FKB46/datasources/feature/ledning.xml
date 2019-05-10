@@ -1,9 +1,9 @@
-<SQLFeatureStore configVersion="3.1.0" xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Ledning/4.6" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2">
+<SQLFeatureStore xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Ledning/4.6" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" configVersion="3.1.0" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd">
   <JDBCConnId>JDBC</JDBCConnId>
   <StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
   <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Ledning/4.6/FKB-Ledning46.xsd</GMLSchema>
   <FeatureTypeMapping name="app:EL_Belysningspunkt" table="fkb_ledning.app_el_belysningspunkt">
-    <FIDMapping prefix="APP_EL_BELYSNINGSPUNKT_">
+    <FIDMapping prefix="app.EL_Belysningspunkt_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -80,7 +80,7 @@
     <Primitive path="app:bruk" mapping="app_bruk"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:EL_Flymarkør" table="fkb_ledning.app_el_flymarkør">
-    <FIDMapping prefix="APP_EL_FLYMARKØR_">
+    <FIDMapping prefix="app.EL_Flymarkør_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -148,7 +148,7 @@
     <Primitive path="app:hovedbruk" mapping="app_hovedbruk"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:EL_Nettstasjon" table="fkb_ledning.app_el_nettstasjon">
-    <FIDMapping prefix="APP_EL_NETTSTASJON_">
+    <FIDMapping prefix="app.EL_Nettstasjon_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -217,7 +217,7 @@
     <Primitive path="app:type" mapping="app_type"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:EL_Vindturbin" table="fkb_ledning.app_el_vindturbin">
-    <FIDMapping prefix="APP_EL_VINDTURBIN_">
+    <FIDMapping prefix="app.EL_Vindturbin_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -286,7 +286,7 @@
     <Primitive path="app:type" mapping="app_type"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Kanal" table="fkb_ledning.app_kanal">
-    <FIDMapping prefix="APP_KANAL_">
+    <FIDMapping prefix="app.Kanal_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -354,7 +354,7 @@
     <Primitive path="app:hovedbruk" mapping="app_hovedbruk"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:LednKum" table="fkb_ledning.app_lednkum">
-    <FIDMapping prefix="APP_LEDNKUM_">
+    <FIDMapping prefix="app.LednKum_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -430,7 +430,7 @@
     <Primitive path="app:kumfunksjon" mapping="app_kumfunksjon"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Mast" table="fkb_ledning.app_mast">
-    <FIDMapping prefix="APP_MAST_">
+    <FIDMapping prefix="app.Mast_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -515,7 +515,7 @@
     <Primitive path="app:luftfartshindermerking" mapping="app_luftfartshindermerking"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Masteomriss" table="fkb_ledning.app_masteomriss">
-    <FIDMapping prefix="APP_MASTEOMRISS_">
+    <FIDMapping prefix="app.Masteomriss_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -584,7 +584,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:NettstasjonAdkomst" table="fkb_ledning.app_nettstasjonadkomst">
-    <FIDMapping prefix="APP_NETTSTASJONADKOMST_">
+    <FIDMapping prefix="app.NettstasjonAdkomst_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -652,7 +652,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Nettverkstasjonomriss" table="fkb_ledning.app_nettverkstasjonomriss">
-    <FIDMapping prefix="APP_NETTVERKSTASJONOMRISS_">
+    <FIDMapping prefix="app.Nettverkstasjonomriss_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -720,7 +720,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Skap" table="fkb_ledning.app_skap">
-    <FIDMapping prefix="APP_SKAP_">
+    <FIDMapping prefix="app.Skap_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -788,7 +788,7 @@
     <Primitive path="app:hovedbruk" mapping="app_hovedbruk"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Trase" table="fkb_ledning.app_trase">
-    <FIDMapping prefix="APP_TRASE_">
+    <FIDMapping prefix="app.Trase_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -870,7 +870,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Åk" table="fkb_ledning.app_åk">
-    <FIDMapping prefix="APP_ÅK_">
+    <FIDMapping prefix="app.Åk_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>

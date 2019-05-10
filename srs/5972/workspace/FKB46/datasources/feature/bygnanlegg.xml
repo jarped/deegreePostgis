@@ -1,9 +1,9 @@
-<SQLFeatureStore configVersion="3.1.0" xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-BygnAnlegg/4.61" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2">
+<SQLFeatureStore xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-BygnAnlegg/4.61" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" configVersion="3.1.0" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd">
   <JDBCConnId>JDBC</JDBCConnId>
   <StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
   <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-BygnAnlegg/4.61/FKB-BygnAnlegg461.xsd</GMLSchema>
   <FeatureTypeMapping name="app:AnnetGjerde" table="fkb_bygnanlegg.app_annetgjerde">
-    <FIDMapping prefix="APP_ANNETGJERDE_">
+    <FIDMapping prefix="app.AnnetGjerde_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -56,7 +56,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:BautaStatue" table="fkb_bygnanlegg.app_bautastatue">
-    <FIDMapping prefix="APP_BAUTASTATUE_">
+    <FIDMapping prefix="app.BautaStatue_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -114,7 +114,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:BautaStatueGrense" table="fkb_bygnanlegg.app_bautastatuegrense">
-    <FIDMapping prefix="APP_BAUTASTATUEGRENSE_">
+    <FIDMapping prefix="app.BautaStatueGrense_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -166,7 +166,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Bensinpumpe" table="fkb_bygnanlegg.app_bensinpumpe">
-    <FIDMapping prefix="APP_BENSINPUMPE_">
+    <FIDMapping prefix="app.Bensinpumpe_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -218,7 +218,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:BeskrivendeHjelpelinjeAnlegg" table="fkb_bygnanlegg.app_beskrivendehjelpelinjeanlegg">
-    <FIDMapping prefix="APP_BESKRIVENDEHJELPELINJEANLEGG_">
+    <FIDMapping prefix="app.BeskrivendeHjelpelinjeAnlegg_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -271,7 +271,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Bru" table="fkb_bygnanlegg.app_bru">
-    <FIDMapping prefix="APP_BRU_">
+    <FIDMapping prefix="app.Bru_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -323,7 +323,7 @@
     </Primitive>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Bruavgrensning" table="fkb_bygnanlegg.app_bruavgrensning">
-    <FIDMapping prefix="APP_BRUAVGRENSNING_">
+    <FIDMapping prefix="app.Bruavgrensning_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -374,7 +374,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Brudetalj" table="fkb_bygnanlegg.app_brudetalj">
-    <FIDMapping prefix="APP_BRUDETALJ_">
+    <FIDMapping prefix="app.Brudetalj_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -425,7 +425,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Brønn" table="fkb_bygnanlegg.app_brønn">
-    <FIDMapping prefix="APP_BRØNN_">
+    <FIDMapping prefix="app.Brønn_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -483,7 +483,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:BrønnGrense" table="fkb_bygnanlegg.app_brønngrense">
-    <FIDMapping prefix="APP_BRØNNGRENSE_">
+    <FIDMapping prefix="app.BrønnGrense_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -535,7 +535,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Dam" table="fkb_bygnanlegg.app_dam">
-    <FIDMapping prefix="APP_DAM_">
+    <FIDMapping prefix="app.Dam_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -583,7 +583,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Damkant" table="fkb_bygnanlegg.app_damkant">
-    <FIDMapping prefix="APP_DAMKANT_">
+    <FIDMapping prefix="app.Damkant_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -634,7 +634,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Dike" table="fkb_bygnanlegg.app_dike">
-    <FIDMapping prefix="APP_DIKE_">
+    <FIDMapping prefix="app.Dike_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -682,7 +682,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Dikekant" table="fkb_bygnanlegg.app_dikekant">
-    <FIDMapping prefix="APP_DIKEKANT_">
+    <FIDMapping prefix="app.Dikekant_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -733,7 +733,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Elveforbygning" table="fkb_bygnanlegg.app_elveforbygning">
-    <FIDMapping prefix="APP_ELVEFORBYGNING_">
+    <FIDMapping prefix="app.Elveforbygning_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -781,7 +781,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Elveforbygningskant" table="fkb_bygnanlegg.app_elveforbygningskant">
-    <FIDMapping prefix="APP_ELVEFORBYGNINGSKANT_">
+    <FIDMapping prefix="app.Elveforbygningskant_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -832,7 +832,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Elveterskel" table="fkb_bygnanlegg.app_elveterskel">
-    <FIDMapping prefix="APP_ELVETERSKEL_">
+    <FIDMapping prefix="app.Elveterskel_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -880,7 +880,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:ElveterskelKant" table="fkb_bygnanlegg.app_elveterskelkant">
-    <FIDMapping prefix="APP_ELVETERSKELKANT_">
+    <FIDMapping prefix="app.ElveterskelKant_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -931,7 +931,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:FiktivAvgrensningForAnlegg" table="fkb_bygnanlegg.app_fiktivavgrensningforanlegg">
-    <FIDMapping prefix="APP_FIKTIVAVGRENSNINGFORANLEGG_">
+    <FIDMapping prefix="app.FiktivAvgrensningForAnlegg_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -982,7 +982,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Fiskehjell" table="fkb_bygnanlegg.app_fiskehjell">
-    <FIDMapping prefix="APP_FISKEHJELL_">
+    <FIDMapping prefix="app.Fiskehjell_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -1030,7 +1030,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:FiskehjellGrense" table="fkb_bygnanlegg.app_fiskehjellgrense">
-    <FIDMapping prefix="APP_FISKEHJELLGRENSE_">
+    <FIDMapping prefix="app.FiskehjellGrense_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -1082,7 +1082,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:FiskehjellMøne" table="fkb_bygnanlegg.app_fiskehjellmøne">
-    <FIDMapping prefix="APP_FISKEHJELLMØNE_">
+    <FIDMapping prefix="app.FiskehjellMøne_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -1133,7 +1133,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Fisketrapp" table="fkb_bygnanlegg.app_fisketrapp">
-    <FIDMapping prefix="APP_FISKETRAPP_">
+    <FIDMapping prefix="app.Fisketrapp_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -1184,7 +1184,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Flaggstang" table="fkb_bygnanlegg.app_flaggstang">
-    <FIDMapping prefix="APP_FLAGGSTANG_">
+    <FIDMapping prefix="app.Flaggstang_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -1237,7 +1237,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Flytebrygge" table="fkb_bygnanlegg.app_flytebrygge">
-    <FIDMapping prefix="APP_FLYTEBRYGGE_">
+    <FIDMapping prefix="app.Flytebrygge_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -1300,7 +1300,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Flytebryggekant" table="fkb_bygnanlegg.app_flytebryggekant">
-    <FIDMapping prefix="APP_FLYTEBRYGGEKANT_">
+    <FIDMapping prefix="app.Flytebryggekant_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -1351,7 +1351,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Fløtningsrenne" table="fkb_bygnanlegg.app_fløtningsrenne">
-    <FIDMapping prefix="APP_FLØTNINGSRENNE_">
+    <FIDMapping prefix="app.Fløtningsrenne_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -1403,7 +1403,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Fortøyningskar" table="fkb_bygnanlegg.app_fortøyningskar">
-    <FIDMapping prefix="APP_FORTØYNINGSKAR_">
+    <FIDMapping prefix="app.Fortøyningskar_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -1454,7 +1454,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:FrittståendeTrapp" table="fkb_bygnanlegg.app_frittståendetrapp">
-    <FIDMapping prefix="APP_FRITTSTÅENDETRAPP_">
+    <FIDMapping prefix="app.FrittståendeTrapp_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -1512,7 +1512,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:FrittståendeTrappKant" table="fkb_bygnanlegg.app_frittståendetrappkant">
-    <FIDMapping prefix="APP_FRITTSTÅENDETRAPPKANT_">
+    <FIDMapping prefix="app.FrittståendeTrappKant_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -1564,7 +1564,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Fundament" table="fkb_bygnanlegg.app_fundament">
-    <FIDMapping prefix="APP_FUNDAMENT_">
+    <FIDMapping prefix="app.Fundament_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -1622,7 +1622,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:FundamentKant" table="fkb_bygnanlegg.app_fundamentkant">
-    <FIDMapping prefix="APP_FUNDAMENTKANT_">
+    <FIDMapping prefix="app.FundamentKant_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -1675,7 +1675,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Gondolbane" table="fkb_bygnanlegg.app_gondolbane">
-    <FIDMapping prefix="APP_GONDOLBANE_">
+    <FIDMapping prefix="app.Gondolbane_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -1727,7 +1727,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Hoppbakke" table="fkb_bygnanlegg.app_hoppbakke">
-    <FIDMapping prefix="APP_HOPPBAKKE_">
+    <FIDMapping prefix="app.Hoppbakke_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -1779,7 +1779,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Idrettsanlegg" table="fkb_bygnanlegg.app_idrettsanlegg">
-    <FIDMapping prefix="APP_IDRETTSANLEGG_">
+    <FIDMapping prefix="app.Idrettsanlegg_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -1831,7 +1831,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:KaiBrygge" table="fkb_bygnanlegg.app_kaibrygge">
-    <FIDMapping prefix="APP_KAIBRYGGE_">
+    <FIDMapping prefix="app.KaiBrygge_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -1879,7 +1879,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:KaiBryggeKant" table="fkb_bygnanlegg.app_kaibryggekant">
-    <FIDMapping prefix="APP_KAIBRYGGEKANT_">
+    <FIDMapping prefix="app.KaiBryggeKant_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -1930,7 +1930,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:KantUtsnitt" table="fkb_bygnanlegg.app_kantutsnitt">
-    <FIDMapping prefix="APP_KANTUTSNITT_">
+    <FIDMapping prefix="app.KantUtsnitt_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -1953,7 +1953,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:KloakkrenseanleggGrense" table="fkb_bygnanlegg.app_kloakkrenseanlegggrense">
-    <FIDMapping prefix="APP_KLOAKKRENSEANLEGGGRENSE_">
+    <FIDMapping prefix="app.KloakkrenseanleggGrense_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -2005,7 +2005,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Kulvert" table="fkb_bygnanlegg.app_kulvert">
-    <FIDMapping prefix="APP_KULVERT_">
+    <FIDMapping prefix="app.Kulvert_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -2056,7 +2056,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Molo" table="fkb_bygnanlegg.app_molo">
-    <FIDMapping prefix="APP_MOLO_">
+    <FIDMapping prefix="app.Molo_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -2105,7 +2105,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:MoloKant" table="fkb_bygnanlegg.app_molokant">
-    <FIDMapping prefix="APP_MOLOKANT_">
+    <FIDMapping prefix="app.MoloKant_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -2156,7 +2156,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:MurFrittstående" table="fkb_bygnanlegg.app_murfrittstående">
-    <FIDMapping prefix="APP_MURFRITTSTÅENDE_">
+    <FIDMapping prefix="app.MurFrittstående_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -2209,7 +2209,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:MurLoddrett" table="fkb_bygnanlegg.app_murloddrett">
-    <FIDMapping prefix="APP_MURLODDRETT_">
+    <FIDMapping prefix="app.MurLoddrett_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -2262,7 +2262,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Oppdrettskar" table="fkb_bygnanlegg.app_oppdrettskar">
-    <FIDMapping prefix="APP_OPPDRETTSKAR_">
+    <FIDMapping prefix="app.Oppdrettskar_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -2314,7 +2314,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:OppdrettsmerderKant" table="fkb_bygnanlegg.app_oppdrettsmerderkant">
-    <FIDMapping prefix="APP_OPPDRETTSMERDERKANT_">
+    <FIDMapping prefix="app.OppdrettsmerderKant_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -2366,7 +2366,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Pipe" table="fkb_bygnanlegg.app_pipe">
-    <FIDMapping prefix="APP_PIPE_">
+    <FIDMapping prefix="app.Pipe_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -2424,7 +2424,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Pipekant" table="fkb_bygnanlegg.app_pipekant">
-    <FIDMapping prefix="APP_PIPEKANT_">
+    <FIDMapping prefix="app.Pipekant_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -2476,7 +2476,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Portstolpe" table="fkb_bygnanlegg.app_portstolpe">
-    <FIDMapping prefix="APP_PORTSTOLPE_">
+    <FIDMapping prefix="app.Portstolpe_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -2528,7 +2528,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Pælebunt" table="fkb_bygnanlegg.app_pælebunt">
-    <FIDMapping prefix="APP_PÆLEBUNT_">
+    <FIDMapping prefix="app.Pælebunt_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -2580,7 +2580,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Rørgate" table="fkb_bygnanlegg.app_rørgate">
-    <FIDMapping prefix="APP_RØRGATE_">
+    <FIDMapping prefix="app.Rørgate_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -2633,7 +2633,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Sandkasse" table="fkb_bygnanlegg.app_sandkasse">
-    <FIDMapping prefix="APP_SANDKASSE_">
+    <FIDMapping prefix="app.Sandkasse_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -2684,7 +2684,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Skitrekk" table="fkb_bygnanlegg.app_skitrekk">
-    <FIDMapping prefix="APP_SKITREKK_">
+    <FIDMapping prefix="app.Skitrekk_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -2736,7 +2736,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Skjerm" table="fkb_bygnanlegg.app_skjerm">
-    <FIDMapping prefix="APP_SKJERM_">
+    <FIDMapping prefix="app.Skjerm_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -2791,7 +2791,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:SkråForstøtningsmur" table="fkb_bygnanlegg.app_skråforstøtningsmur">
-    <FIDMapping prefix="APP_SKRÅFORSTØTNINGSMUR_">
+    <FIDMapping prefix="app.SkråForstøtningsmur_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -2840,7 +2840,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:SkråForstøtningsmurAvgrensning" table="fkb_bygnanlegg.app_skråforstøtningsmuravgrensning">
-    <FIDMapping prefix="APP_SKRÅFORSTØTNINGSMURAVGRENSNING_">
+    <FIDMapping prefix="app.SkråForstøtningsmurAvgrensning_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -2892,7 +2892,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Skytebaneinnretning" table="fkb_bygnanlegg.app_skytebaneinnretning">
-    <FIDMapping prefix="APP_SKYTEBANEINNRETNING_">
+    <FIDMapping prefix="app.Skytebaneinnretning_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -2944,7 +2944,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Slipp" table="fkb_bygnanlegg.app_slipp">
-    <FIDMapping prefix="APP_SLIPP_">
+    <FIDMapping prefix="app.Slipp_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -2996,7 +2996,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Sluse" table="fkb_bygnanlegg.app_sluse">
-    <FIDMapping prefix="APP_SLUSE_">
+    <FIDMapping prefix="app.Sluse_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -3049,7 +3049,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Smørebukk" table="fkb_bygnanlegg.app_smørebukk">
-    <FIDMapping prefix="APP_SMØREBUKK_">
+    <FIDMapping prefix="app.Smørebukk_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -3101,7 +3101,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Steingjerde" table="fkb_bygnanlegg.app_steingjerde">
-    <FIDMapping prefix="APP_STEINGJERDE_">
+    <FIDMapping prefix="app.Steingjerde_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -3153,7 +3153,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Stikkrenne" table="fkb_bygnanlegg.app_stikkrenne">
-    <FIDMapping prefix="APP_STIKKRENNE_">
+    <FIDMapping prefix="app.Stikkrenne_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -3204,7 +3204,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Stolheis" table="fkb_bygnanlegg.app_stolheis">
-    <FIDMapping prefix="APP_STOLHEIS_">
+    <FIDMapping prefix="app.Stolheis_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -3256,7 +3256,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Svømmebasseng" table="fkb_bygnanlegg.app_svømmebasseng">
-    <FIDMapping prefix="APP_SVØMMEBASSENG_">
+    <FIDMapping prefix="app.Svømmebasseng_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -3305,7 +3305,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:SvømmebassengKant" table="fkb_bygnanlegg.app_svømmebassengkant">
-    <FIDMapping prefix="APP_SVØMMEBASSENGKANT_">
+    <FIDMapping prefix="app.SvømmebassengKant_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -3357,7 +3357,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Tank" table="fkb_bygnanlegg.app_tank">
-    <FIDMapping prefix="APP_TANK_">
+    <FIDMapping prefix="app.Tank_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -3415,7 +3415,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Tankkant" table="fkb_bygnanlegg.app_tankkant">
-    <FIDMapping prefix="APP_TANKKANT_">
+    <FIDMapping prefix="app.Tankkant_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -3468,7 +3468,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Taubane" table="fkb_bygnanlegg.app_taubane">
-    <FIDMapping prefix="APP_TAUBANE_">
+    <FIDMapping prefix="app.Taubane_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -3520,7 +3520,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Tribune" table="fkb_bygnanlegg.app_tribune">
-    <FIDMapping prefix="APP_TRIBUNE_">
+    <FIDMapping prefix="app.Tribune_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -3568,7 +3568,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Tribunekant" table="fkb_bygnanlegg.app_tribunekant">
-    <FIDMapping prefix="APP_TRIBUNEKANT_">
+    <FIDMapping prefix="app.Tribunekant_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -3620,7 +3620,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Tunnelportal" table="fkb_bygnanlegg.app_tunnelportal">
-    <FIDMapping prefix="APP_TUNNELPORTAL_">
+    <FIDMapping prefix="app.Tunnelportal_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -3671,7 +3671,7 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Tårn" table="fkb_bygnanlegg.app_tårn">
-    <FIDMapping prefix="APP_TÅRN_">
+    <FIDMapping prefix="app.Tårn_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -3729,7 +3729,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Tårnkant" table="fkb_bygnanlegg.app_tårnkant">
-    <FIDMapping prefix="APP_TÅRNKANT_">
+    <FIDMapping prefix="app.Tårnkant_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -3781,7 +3781,7 @@
     <Primitive path="app:høydereferanse" mapping="app_høydereferanse"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:VeggFrittstående" table="fkb_bygnanlegg.app_veggfrittstående">
-    <FIDMapping prefix="APP_VEGGFRITTSTÅENDE_">
+    <FIDMapping prefix="app.VeggFrittstående_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
@@ -3834,7 +3834,7 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Voll" table="fkb_bygnanlegg.app_voll">
-    <FIDMapping prefix="APP_VOLL_">
+    <FIDMapping prefix="app.Voll_">
       <Column name="attr_gml_id" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
