@@ -2,3 +2,4 @@ development/datasources/feature/bbox_cache.properties
 workspace/development/datasources/feature/bbox_cache.properties
 web/geoinnsyn
 data
+workspace/FKB46_UTM32/datasources/feature/bbox_cache.properties

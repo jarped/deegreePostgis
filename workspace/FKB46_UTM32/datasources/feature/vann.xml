@@ -1,6 +1,6 @@
 <SQLFeatureStore configVersion="3.1.0" xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Vann/4.61" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2">
   <JDBCConnId>JDBC</JDBCConnId>
-  <StorageCRS srid="5972" dim="2D">EPSG:5972</StorageCRS>
+  <StorageCRS srid="5972" dim="3D">EPSG:5972</StorageCRS>
   <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Vann/4.61/FKB-Vann461.xsd</GMLSchema>
   <FeatureTypeMapping name="app:Dataavgrensning" table="fkb_vann.app_dataavgrensning">
     <FIDMapping prefix="APP_DATAAVGRENSNING_">
