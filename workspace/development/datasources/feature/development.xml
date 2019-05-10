@@ -1,11 +1,8 @@
-<SQLFeatureStore configVersion="3.4.0" xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql
-  http://schemas.deegree.org/datasource/feature/sql/3.4.0/sql.xsd">
-  <JDBCConnId>postgis</JDBCConnId>
+<SQLFeatureStore xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" configVersion="3.2.0" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.2.0/sql.xsd">
 
-  <!-- Map table country to Feature Type -->
-  <FeatureTypeMapping table="point" />
-  <FeatureTypeMapping table="line" />
-  <FeatureTypeMapping table="polygon" />
+  <JDBCConnId>JDBC</JDBCConnId>
+  <FeatureTypeMapping table="point"/>
+  <FeatureTypeMapping table="line"/>
+  <FeatureTypeMapping table="polygon"/>
 
 </SQLFeatureStore>
