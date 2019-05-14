@@ -1,12 +1,11 @@
-<SQLFeatureStore configVersion="3.1.0" xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bane/4.6" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2">
+<SQLFeatureStore xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bane/4.6" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" configVersion="3.1.0" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd">
   <JDBCConnId>JDBC</JDBCConnId>
   <StorageCRS srid="5975" dim="3D">EPSG:5975</StorageCRS>
   <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bane/4.6/FKB-Bane46.xsd</GMLSchema>
   <FeatureTypeMapping name="app:Jernbaneplattformkant" table="fkb_bane.app_jernbaneplattformkant">
-    <FIDMapping prefix="APP_JERNBANEPLATTFORMKANT_">
+    <FIDMapping prefix="app.Jernbaneplattformkant_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -55,10 +54,9 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Spormidt" table="fkb_bane.app_spormidt">
-    <FIDMapping prefix="APP_SPORMIDT_">
+    <FIDMapping prefix="app.Spormidt_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>

@@ -5,8 +5,7 @@
   <FeatureTypeMapping name="app:ArealressursFlate" table="fkb_ar5.app_arealressursflate">
     <FIDMapping prefix="app.ArealressursFlate_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -66,8 +65,7 @@
   <FeatureTypeMapping name="app:ArealressursGrense" table="fkb_ar5.app_arealressursgrense">
     <FIDMapping prefix="app.ArealressursGrense_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -117,8 +115,7 @@
   <FeatureTypeMapping name="app:ArealressursGrenseFiktiv" table="fkb_ar5.app_arealressursgrensefiktiv">
     <FIDMapping prefix="app.ArealressursGrenseFiktiv_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -159,8 +156,7 @@
   <FeatureTypeMapping name="app:KantUtsnitt" table="fkb_ar5.app_kantutsnitt">
     <FIDMapping prefix="app.KantUtsnitt_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>

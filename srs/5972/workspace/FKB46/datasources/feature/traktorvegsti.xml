@@ -5,8 +5,7 @@
   <FeatureTypeMapping name="app:Veglenke" table="fkb_traktorvegsti.app_veglenke">
     <FIDMapping prefix="app.Veglenke_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -86,8 +85,7 @@
   <FeatureTypeMapping name="app:Vegsperring" table="fkb_traktorvegsti.app_vegsperring">
     <FIDMapping prefix="app.Vegsperring_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>

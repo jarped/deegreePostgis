@@ -5,8 +5,7 @@
   <FeatureTypeMapping name="app:Kumlokk" table="fkb_ledningva.app_kumlokk">
     <FIDMapping prefix="app.Kumlokk_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -56,8 +55,7 @@
   <FeatureTypeMapping name="app:VA_Hydrant" table="fkb_ledningva.app_va_hydrant">
     <FIDMapping prefix="app.VA_Hydrant_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -108,8 +106,7 @@
   <FeatureTypeMapping name="app:VA_Sluk" table="fkb_ledningva.app_va_sluk">
     <FIDMapping prefix="app.VA_Sluk_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>

@@ -5,8 +5,7 @@
   <FeatureTypeMapping name="app:AnnenBygning" table="fkb_bygning.app_annenbygning">
     <FIDMapping prefix="app.AnnenBygning_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -56,8 +55,7 @@
   <FeatureTypeMapping name="app:Arkade" table="fkb_bygning.app_arkade">
     <FIDMapping prefix="app.Arkade_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -109,8 +107,7 @@
   <FeatureTypeMapping name="app:Bygning" table="fkb_bygning.app_bygning">
     <FIDMapping prefix="app.Bygning_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -177,8 +174,7 @@
   <FeatureTypeMapping name="app:BygningBru" table="fkb_bygning.app_bygningbru">
     <FIDMapping prefix="app.BygningBru_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -228,8 +224,7 @@
   <FeatureTypeMapping name="app:BygningsavgrensningTiltak" table="fkb_bygning.app_bygningsavgrensningtiltak">
     <FIDMapping prefix="app.BygningsavgrensningTiltak_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -283,8 +278,7 @@
   <FeatureTypeMapping name="app:Bygningsdelelinje" table="fkb_bygning.app_bygningsdelelinje">
     <FIDMapping prefix="app.Bygningsdelelinje_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -335,8 +329,7 @@
   <FeatureTypeMapping name="app:Bygningslinje" table="fkb_bygning.app_bygningslinje">
     <FIDMapping prefix="app.Bygningslinje_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -387,8 +380,7 @@
   <FeatureTypeMapping name="app:Fasadeliv" table="fkb_bygning.app_fasadeliv">
     <FIDMapping prefix="app.Fasadeliv_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -441,8 +433,7 @@
   <FeatureTypeMapping name="app:FiktivBygningsavgrensning" table="fkb_bygning.app_fiktivbygningsavgrensning">
     <FIDMapping prefix="app.FiktivBygningsavgrensning_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -493,8 +484,7 @@
   <FeatureTypeMapping name="app:Grunnmur" table="fkb_bygning.app_grunnmur">
     <FIDMapping prefix="app.Grunnmur_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -546,8 +536,7 @@
   <FeatureTypeMapping name="app:Hjelpelinje3D" table="fkb_bygning.app_hjelpelinje3d">
     <FIDMapping prefix="app.Hjelpelinje3D_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -598,8 +587,7 @@
   <FeatureTypeMapping name="app:Hjelpepunkt3D" table="fkb_bygning.app_hjelpepunkt3d">
     <FIDMapping prefix="app.Hjelpepunkt3D_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -650,8 +638,7 @@
   <FeatureTypeMapping name="app:KantUtsnitt" table="fkb_bygning.app_kantutsnitt">
     <FIDMapping prefix="app.KantUtsnitt_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -673,8 +660,7 @@
   <FeatureTypeMapping name="app:Låvebru" table="fkb_bygning.app_låvebru">
     <FIDMapping prefix="app.Låvebru_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -724,8 +710,7 @@
   <FeatureTypeMapping name="app:Mønelinje" table="fkb_bygning.app_mønelinje">
     <FIDMapping prefix="app.Mønelinje_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -776,8 +761,7 @@
   <FeatureTypeMapping name="app:Portrom" table="fkb_bygning.app_portrom">
     <FIDMapping prefix="app.Portrom_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -829,8 +813,7 @@
   <FeatureTypeMapping name="app:TakMur" table="fkb_bygning.app_takmur">
     <FIDMapping prefix="app.TakMur_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -881,8 +864,7 @@
   <FeatureTypeMapping name="app:Takkant" table="fkb_bygning.app_takkant">
     <FIDMapping prefix="app.Takkant_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -935,8 +917,7 @@
   <FeatureTypeMapping name="app:Takoverbygg" table="fkb_bygning.app_takoverbygg">
     <FIDMapping prefix="app.Takoverbygg_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -983,8 +964,7 @@
   <FeatureTypeMapping name="app:TakoverbyggKant" table="fkb_bygning.app_takoverbyggkant">
     <FIDMapping prefix="app.TakoverbyggKant_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -1034,8 +1014,7 @@
   <FeatureTypeMapping name="app:Takplatå" table="fkb_bygning.app_takplatå">
     <FIDMapping prefix="app.Takplatå_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -1086,8 +1065,7 @@
   <FeatureTypeMapping name="app:TakplatåTopp" table="fkb_bygning.app_takplatåtopp">
     <FIDMapping prefix="app.TakplatåTopp_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -1138,8 +1116,7 @@
   <FeatureTypeMapping name="app:Taksprang" table="fkb_bygning.app_taksprang">
     <FIDMapping prefix="app.Taksprang_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -1190,8 +1167,7 @@
   <FeatureTypeMapping name="app:TaksprangBunn" table="fkb_bygning.app_taksprangbunn">
     <FIDMapping prefix="app.TaksprangBunn_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -1242,8 +1218,7 @@
   <FeatureTypeMapping name="app:TrappBygg" table="fkb_bygning.app_trappbygg">
     <FIDMapping prefix="app.TrappBygg_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -1293,8 +1268,7 @@
   <FeatureTypeMapping name="app:Veranda" table="fkb_bygning.app_veranda">
     <FIDMapping prefix="app.Veranda_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>

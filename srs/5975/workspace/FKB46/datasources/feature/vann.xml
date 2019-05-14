@@ -1,12 +1,11 @@
-<SQLFeatureStore configVersion="3.1.0" xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Vann/4.61" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2">
+<SQLFeatureStore xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Vann/4.61" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" configVersion="3.1.0" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd">
   <JDBCConnId>JDBC</JDBCConnId>
   <StorageCRS srid="5975" dim="3D">EPSG:5975</StorageCRS>
   <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Vann/4.61/FKB-Vann461.xsd</GMLSchema>
   <FeatureTypeMapping name="app:Dataavgrensning" table="fkb_vann.app_dataavgrensning">
-    <FIDMapping prefix="APP_DATAAVGRENSNING_">
+    <FIDMapping prefix="app.Dataavgrensning_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -54,10 +53,9 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:ElvBekk" table="fkb_vann.app_elvbekk">
-    <FIDMapping prefix="APP_ELVBEKK_">
+    <FIDMapping prefix="app.ElvBekk_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -119,10 +117,9 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:ElvBekkKant" table="fkb_vann.app_elvbekkkant">
-    <FIDMapping prefix="APP_ELVBEKKKANT_">
+    <FIDMapping prefix="app.ElvBekkKant_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -171,10 +168,9 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:ElveElvSperre" table="fkb_vann.app_elveelvsperre">
-    <FIDMapping prefix="APP_ELVEELVSPERRE_">
+    <FIDMapping prefix="app.ElveElvSperre_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -222,10 +218,9 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:ElvelinjeFiktiv" table="fkb_vann.app_elvelinjefiktiv">
-    <FIDMapping prefix="APP_ELVELINJEFIKTIV_">
+    <FIDMapping prefix="app.ElvelinjeFiktiv_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -273,10 +268,9 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:FiktivDelelinje" table="fkb_vann.app_fiktivdelelinje">
-    <FIDMapping prefix="APP_FIKTIVDELELINJE_">
+    <FIDMapping prefix="app.FiktivDelelinje_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -324,10 +318,9 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Flomløpkant" table="fkb_vann.app_flomløpkant">
-    <FIDMapping prefix="APP_FLOMLØPKANT_">
+    <FIDMapping prefix="app.Flomløpkant_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -375,10 +368,9 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:HavElvSperre" table="fkb_vann.app_havelvsperre">
-    <FIDMapping prefix="APP_HAVELVSPERRE_">
+    <FIDMapping prefix="app.HavElvSperre_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -428,10 +420,9 @@
     <Primitive path="app:høyde" mapping="app_høyde"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Havflate" table="fkb_vann.app_havflate">
-    <FIDMapping prefix="APP_HAVFLATE_">
+    <FIDMapping prefix="app.Havflate_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -477,10 +468,9 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Innsjø" table="fkb_vann.app_innsjø">
-    <FIDMapping prefix="APP_INNSJØ_">
+    <FIDMapping prefix="app.Innsjø_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -527,10 +517,9 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:InnsjøElvSperre" table="fkb_vann.app_innsjøelvsperre">
-    <FIDMapping prefix="APP_INNSJØELVSPERRE_">
+    <FIDMapping prefix="app.InnsjøElvSperre_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -579,10 +568,9 @@
     <Primitive path="app:høyde" mapping="app_høyde"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Innsjøkant" table="fkb_vann.app_innsjøkant">
-    <FIDMapping prefix="APP_INNSJØKANT_">
+    <FIDMapping prefix="app.Innsjøkant_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -632,10 +620,9 @@
     <Primitive path="app:høyde" mapping="app_høyde"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:InnsjøkantRegulert" table="fkb_vann.app_innsjøkantregulert">
-    <FIDMapping prefix="APP_INNSJØKANTREGULERT_">
+    <FIDMapping prefix="app.InnsjøkantRegulert_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -685,10 +672,9 @@
     <Primitive path="app:høyde" mapping="app_høyde"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:InnsjølinjeFiktiv" table="fkb_vann.app_innsjølinjefiktiv">
-    <FIDMapping prefix="APP_INNSJØLINJEFIKTIV_">
+    <FIDMapping prefix="app.InnsjølinjeFiktiv_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -736,10 +722,9 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:KanalGrøft" table="fkb_vann.app_kanalgrøft">
-    <FIDMapping prefix="APP_KANALGRØFT_">
+    <FIDMapping prefix="app.KanalGrøft_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -801,10 +786,9 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:KanalGrøftKant" table="fkb_vann.app_kanalgrøftkant">
-    <FIDMapping prefix="APP_KANALGRØFTKANT_">
+    <FIDMapping prefix="app.KanalGrøftKant_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -853,10 +837,9 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:KantUtsnitt" table="fkb_vann.app_kantutsnitt">
-    <FIDMapping prefix="APP_KANTUTSNITT_">
+    <FIDMapping prefix="app.KantUtsnitt_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -876,10 +859,9 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Kystkontur" table="fkb_vann.app_kystkontur">
-    <FIDMapping prefix="APP_KYSTKONTUR_">
+    <FIDMapping prefix="app.Kystkontur_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -930,10 +912,9 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:KystkonturTekniskeAnlegg" table="fkb_vann.app_kystkonturtekniskeanlegg">
-    <FIDMapping prefix="APP_KYSTKONTURTEKNISKEANLEGG_">
+    <FIDMapping prefix="app.KystkonturTekniskeAnlegg_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -985,10 +966,9 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Navigasjonsinstallasjon" table="fkb_vann.app_navigasjonsinstallasjon">
-    <FIDMapping prefix="APP_NAVIGASJONSINSTALLASJON_">
+    <FIDMapping prefix="app.Navigasjonsinstallasjon_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -1036,10 +1016,9 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Skjær" table="fkb_vann.app_skjær">
-    <FIDMapping prefix="APP_SKJÆR_">
+    <FIDMapping prefix="app.Skjær_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -1088,10 +1067,9 @@
     <Primitive path="app:høyde" mapping="app_høyde"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:SnøIsbre" table="fkb_vann.app_snøisbre">
-    <FIDMapping prefix="APP_SNØISBRE_">
+    <FIDMapping prefix="app.SnøIsbre_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -1136,10 +1114,9 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:SnøIsbreKant" table="fkb_vann.app_snøisbrekant">
-    <FIDMapping prefix="APP_SNØISBREKANT_">
+    <FIDMapping prefix="app.SnøIsbreKant_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>

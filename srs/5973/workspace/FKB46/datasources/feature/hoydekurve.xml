@@ -1,12 +1,11 @@
-<SQLFeatureStore configVersion="3.1.0" xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Hoydekurve/4.6/" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2">
+<SQLFeatureStore xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:app="http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Hoydekurve/4.6/" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" configVersion="3.1.0" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd">
   <JDBCConnId>JDBC</JDBCConnId>
   <StorageCRS srid="5973" dim="3D">EPSG:5973</StorageCRS>
   <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Hoydekurve/4.6/FKB-Hoydekurve46.xsd</GMLSchema>
   <FeatureTypeMapping name="app:Bruddlinje" table="fkb_hoydekurve.app_bruddlinje">
-    <FIDMapping prefix="APP_BRUDDLINJE_">
+    <FIDMapping prefix="app.Bruddlinje_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -54,10 +53,9 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:DTMPunkt" table="fkb_hoydekurve.app_dtmpunkt">
-    <FIDMapping prefix="APP_DTMPUNKT_">
+    <FIDMapping prefix="app.DTMPunkt_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -106,10 +104,9 @@
     <Primitive path="app:høyde" mapping="app_høyde"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Forsenkningskurve" table="fkb_hoydekurve.app_forsenkningskurve">
-    <FIDMapping prefix="APP_FORSENKNINGSKURVE_">
+    <FIDMapping prefix="app.Forsenkningskurve_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -159,10 +156,9 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Forsenkningspunkt" table="fkb_hoydekurve.app_forsenkningspunkt">
-    <FIDMapping prefix="APP_FORSENKNINGSPUNKT_">
+    <FIDMapping prefix="app.Forsenkningspunkt_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -212,10 +208,9 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:FyllingKant" table="fkb_hoydekurve.app_fyllingkant">
-    <FIDMapping prefix="APP_FYLLINGKANT_">
+    <FIDMapping prefix="app.FyllingKant_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -263,10 +258,9 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Hjelpekurve" table="fkb_hoydekurve.app_hjelpekurve">
-    <FIDMapping prefix="APP_HJELPEKURVE_">
+    <FIDMapping prefix="app.Hjelpekurve_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -316,10 +310,9 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Høydekurve" table="fkb_hoydekurve.app_høydekurve">
-    <FIDMapping prefix="APP_HØYDEKURVE_">
+    <FIDMapping prefix="app.Høydekurve_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -369,10 +362,9 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:SkjæringKant" table="fkb_hoydekurve.app_skjæringkant">
-    <FIDMapping prefix="APP_SKJÆRINGKANT_">
+    <FIDMapping prefix="app.SkjæringKant_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -420,10 +412,9 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Terrenglinje" table="fkb_hoydekurve.app_terrenglinje">
-    <FIDMapping prefix="APP_TERRENGLINJE_">
+    <FIDMapping prefix="app.Terrenglinje_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -471,10 +462,9 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:TerrenglinjeBygg" table="fkb_hoydekurve.app_terrenglinjebygg">
-    <FIDMapping prefix="APP_TERRENGLINJEBYGG_">
+    <FIDMapping prefix="app.TerrenglinjeBygg_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -522,10 +512,9 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:TerrenglinjeVeg" table="fkb_hoydekurve.app_terrenglinjeveg">
-    <FIDMapping prefix="APP_TERRENGLINJEVEG_">
+    <FIDMapping prefix="app.TerrenglinjeVeg_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -573,10 +562,9 @@
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Terrengpunkt" table="fkb_hoydekurve.app_terrengpunkt">
-    <FIDMapping prefix="APP_TERRENGPUNKT_">
+    <FIDMapping prefix="app.Terrengpunkt_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -626,10 +614,9 @@
     <Primitive path="app:medium" mapping="app_medium"/>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Toppunkt" table="fkb_hoydekurve.app_toppunkt">
-    <FIDMapping prefix="APP_TOPPUNKT_">
+    <FIDMapping prefix="app.Toppunkt_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>

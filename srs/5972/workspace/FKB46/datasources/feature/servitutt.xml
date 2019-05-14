@@ -5,8 +5,7 @@
   <FeatureTypeMapping name="app:KantUtsnitt" table="fkb_servitutt.app_kantutsnitt">
     <FIDMapping prefix="app.KantUtsnitt_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -28,8 +27,7 @@
   <FeatureTypeMapping name="app:Servitutt" table="fkb_servitutt.app_servitutt">
     <FIDMapping prefix="app.Servitutt_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -95,8 +93,7 @@
   <FeatureTypeMapping name="app:Servituttgrense" table="fkb_servitutt.app_servituttgrense">
     <FIDMapping prefix="app.Servituttgrense_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
@@ -140,8 +137,7 @@
   <FeatureTypeMapping name="app:ServituttgrenseFiktiv" table="fkb_servitutt.app_servituttgrensefiktiv">
     <FIDMapping prefix="app.ServituttgrenseFiktiv_">
       <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
-      <UUIDGenerator/>
-    </FIDMapping>
+      </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="gml_identifier"/>
       <Primitive path="@codeSpace" mapping="gml_identifier_attr_codespace"/>
