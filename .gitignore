@@ -1,8 +1,5 @@
-development/datasources/feature/bbox_cache.properties
-workspace/development/datasources/feature/bbox_cache.properties
 web/geoinnsyn
 data
-workspace/FKB46_UTM32/datasources/feature/bbox_cache.properties
 subscriber
-srs/5972/workspace/FKB46/datasources/feature/bbox_cache.properties
+**/bbox_cache.properties
 .env
