@@ -20,5 +20,9 @@ for filename in os.listdir(directory):
       uuidGenerator=fidMapping.xpath('./ns0:UUIDGenerator', namespaces=ns)
       if(len(uuidGenerator) == 0): continue
       fidMapping.remove(uuidGenerator[0])
+    joins=featureType.xpath('*/ns0:Join', namespaces=ns)
+    if(len(joins) == 0): continue
+    for join in joins:
+      join.set('fromColumns', localid)
 
   tree.write(directory + filename, encoding='utf-8', pretty_print=True)
