@@ -1,2 +1,2 @@
-FROM mdillon/postgis:9.1
+FROM mdillon/postgis
 COPY srs/5972/init/*.* /docker-entrypoint-initdb.d/
