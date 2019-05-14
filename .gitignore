@@ -5,3 +5,4 @@ data
 workspace/FKB46_UTM32/datasources/feature/bbox_cache.properties
 subscriber
 srs/5972/workspace/FKB46/datasources/feature/bbox_cache.properties
+.env

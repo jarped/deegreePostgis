@@ -17,14 +17,10 @@ services:
       POSTGRES_DB: development
 
   deegree:
-    container_name: deegreepostgis_wfs
-    build: 
-      context: ./
-      dockerfile: Dockerfile_wfs
+    container_name: deegreepostgis-wfs
+    image: geosynchronization/deegree3
     depends_on:
       - postgresql
-    # image: deegree/deegree3-docker
-    image: deegreepostgis_wfs
     ports:
       - "8181:8080"
     volumes:
@@ -33,12 +29,12 @@ services:
     environment:
       DEEGREE_WORKSPACE_ROOT: /deegree
 
-  # deegree_cli:
-  #   container_name: deegreepostgis_deegree_cli
-  #   image: geosynchronization/deegreeschemareader
+  # subscriber:
+  #   container_name: deegreepostgis_subscriber
+  #   image: geosynchronization/coresubscriber
   #   volumes:
-  #     - ./data:/data
-  #   command: ./convert.sh 5972 http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Tiltak/4.6/FKB-Tiltak46.xsd tiltak
+  #     - ./subscriber:/data
+  #   command: ["dotnet", "CORESubscriber.dll", "add", "${providerurl}", "${username}", "${password}", "/data/${providerSettings}.xml"]
 
 volumes:
   db_volume:
