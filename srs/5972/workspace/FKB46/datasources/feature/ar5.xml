@@ -4,7 +4,7 @@
   <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Ar5/4.6/FKB-Ar546.xsd</GMLSchema>
   <FeatureTypeMapping name="app:ArealressursFlate" table="fkb_ar5.app_arealressursflate">
     <FIDMapping prefix="app.ArealressursFlate_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -65,7 +65,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:ArealressursGrense" table="fkb_ar5.app_arealressursgrense">
     <FIDMapping prefix="app.ArealressursGrense_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -116,7 +116,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:ArealressursGrenseFiktiv" table="fkb_ar5.app_arealressursgrensefiktiv">
     <FIDMapping prefix="app.ArealressursGrenseFiktiv_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -158,7 +158,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:KantUtsnitt" table="fkb_ar5.app_kantutsnitt">
     <FIDMapping prefix="app.KantUtsnitt_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">

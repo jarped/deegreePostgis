@@ -44,7 +44,7 @@ CREATE TABLE app_veglenke (
     app_barmarksløype boolean,
     app_rutemerking text,
     app_medium text,
-    CONSTRAINT app_veglenke_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_veglenke_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_veglenke','app_senterlinje_value','5973','GEOMETRY', 3); CREATE TABLE app_vegsperring (
     attr_gml_id text,
     gml_identifier text,
@@ -78,5 +78,5 @@ CREATE TABLE app_veglenke (
     app_vegsperringtype text,
     app_kommunenummer text,
     app_kommunenummer_attr_codespace text,
-    CONSTRAINT app_vegsperring_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_vegsperring_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_vegsperring','app_posisjon_value','5973','GEOMETRY', 3)

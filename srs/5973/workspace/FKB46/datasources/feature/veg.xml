@@ -4,7 +4,7 @@
   <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Veg/4.61/FKB-Veg461.xsd</GMLSchema>
   <FeatureTypeMapping name="app:AnnetVegarealAvgrensning" table="fkb_veg.app_annetvegarealavgrensning">
     <FIDMapping prefix="APP_ANNETVEGAREALAVGRENSNING_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -56,7 +56,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:FartsdemperAvgrensning" table="fkb_veg.app_fartsdemperavgrensning">
     <FIDMapping prefix="APP_FARTSDEMPERAVGRENSNING_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -108,7 +108,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:FeristAvgrensning" table="fkb_veg.app_feristavgrensning">
     <FIDMapping prefix="APP_FERISTAVGRENSNING_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -159,7 +159,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Fortauskant" table="fkb_veg.app_fortauskant">
     <FIDMapping prefix="APP_FORTAUSKANT_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -213,7 +213,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:GangSykkelveg" table="fkb_veg.app_gangsykkelveg">
     <FIDMapping prefix="APP_GANGSYKKELVEG_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -262,7 +262,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:GangSykkelvegkant" table="fkb_veg.app_gangsykkelvegkant">
     <FIDMapping prefix="APP_GANGSYKKELVEGKANT_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -316,7 +316,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:GangfeltAvgrensning" table="fkb_veg.app_gangfeltavgrensning">
     <FIDMapping prefix="APP_GANGFELTAVGRENSNING_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -368,7 +368,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Gangvegkant" table="fkb_veg.app_gangvegkant">
     <FIDMapping prefix="APP_GANGVEGKANT_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -420,7 +420,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:KantUtsnitt" table="fkb_veg.app_kantutsnitt">
     <FIDMapping prefix="APP_KANTUTSNITT_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -443,7 +443,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Kjørebanekant" table="fkb_veg.app_kjørebanekant">
     <FIDMapping prefix="APP_KJØREBANEKANT_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -495,7 +495,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Parkeringsområde" table="fkb_veg.app_parkeringsområde">
     <FIDMapping prefix="APP_PARKERINGSOMRÅDE_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -544,7 +544,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Skiltportal" table="fkb_veg.app_skiltportal">
     <FIDMapping prefix="APP_SKILTPORTAL_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -596,7 +596,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Trafikksignalpunkt" table="fkb_veg.app_trafikksignalpunkt">
     <FIDMapping prefix="APP_TRAFIKKSIGNALPUNKT_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -649,7 +649,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Trafikkøy" table="fkb_veg.app_trafikkøy">
     <FIDMapping prefix="APP_TRAFIKKØY_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -698,7 +698,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Trafikkøykant" table="fkb_veg.app_trafikkøykant">
     <FIDMapping prefix="APP_TRAFIKKØYKANT_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -752,7 +752,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Traktorveg" table="fkb_veg.app_traktorveg">
     <FIDMapping prefix="APP_TRAKTORVEG_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -801,7 +801,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Traktorvegkant" table="fkb_veg.app_traktorvegkant">
     <FIDMapping prefix="APP_TRAKTORVEGKANT_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -853,7 +853,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Veg" table="fkb_veg.app_veg">
     <FIDMapping prefix="APP_VEG_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -910,7 +910,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Vegbom" table="fkb_veg.app_vegbom">
     <FIDMapping prefix="APP_VEGBOM_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -964,7 +964,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Vegdekkekant" table="fkb_veg.app_vegdekkekant">
     <FIDMapping prefix="APP_VEGDEKKEKANT_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -1018,7 +1018,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:VeggrøftÅpen" table="fkb_veg.app_veggrøftåpen">
     <FIDMapping prefix="APP_VEGGRØFTÅPEN_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -1069,7 +1069,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:VegkantAnnetVegareal" table="fkb_veg.app_vegkantannetvegareal">
     <FIDMapping prefix="APP_VEGKANTANNETVEGAREAL_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -1121,7 +1121,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:VegkantAvkjørsel" table="fkb_veg.app_vegkantavkjørsel">
     <FIDMapping prefix="APP_VEGKANTAVKJØRSEL_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -1173,7 +1173,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:VegkantFiktiv" table="fkb_veg.app_vegkantfiktiv">
     <FIDMapping prefix="APP_VEGKANTFIKTIV_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -1225,7 +1225,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:VegoppmerkingLangsgående" table="fkb_veg.app_vegoppmerkinglangsgående">
     <FIDMapping prefix="APP_VEGOPPMERKINGLANGSGÅENDE_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -1277,7 +1277,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Vegrekkverk" table="fkb_veg.app_vegrekkverk">
     <FIDMapping prefix="APP_VEGREKKVERK_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -1331,7 +1331,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Vegskulderkant" table="fkb_veg.app_vegskulderkant">
     <FIDMapping prefix="APP_VEGSKULDERKANT_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">

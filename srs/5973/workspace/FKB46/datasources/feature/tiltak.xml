@@ -4,7 +4,7 @@
   <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Tiltak/4.6/FKB-Tiltak46.xsd</GMLSchema>
   <FeatureTypeMapping name="app:AndreTiltak" table="fkb_tiltak.app_andretiltak">
     <FIDMapping prefix="APP_ANDRETILTAK_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -62,7 +62,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:KantUtsnitt" table="fkb_tiltak.app_kantutsnitt">
     <FIDMapping prefix="APP_KANTUTSNITT_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -85,7 +85,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:PblSøknad" table="fkb_tiltak.app_pblsøknad">
     <FIDMapping prefix="APP_PBLSØKNAD_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -144,7 +144,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:PblSøknadGrense" table="fkb_tiltak.app_pblsøknadgrense">
     <FIDMapping prefix="APP_PBLSØKNADGRENSE_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -187,7 +187,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:PblTiltak" table="fkb_tiltak.app_pbltiltak">
     <FIDMapping prefix="APP_PBLTILTAK_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -254,7 +254,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:TiltakGrense" table="fkb_tiltak.app_tiltakgrense">
     <FIDMapping prefix="APP_TILTAKGRENSE_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">

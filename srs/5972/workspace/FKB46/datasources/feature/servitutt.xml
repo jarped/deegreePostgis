@@ -4,7 +4,7 @@
   <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Servitutt/4.6/FKB-Servitutt46.xsd</GMLSchema>
   <FeatureTypeMapping name="app:KantUtsnitt" table="fkb_servitutt.app_kantutsnitt">
     <FIDMapping prefix="app.KantUtsnitt_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -27,7 +27,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Servitutt" table="fkb_servitutt.app_servitutt">
     <FIDMapping prefix="app.Servitutt_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -73,7 +73,7 @@
       <Geometry path="." mapping="app_posisjon_value"/>
     </Complex>
     <Complex path="app:servituttgruppe">
-      <Join table="fkb_servitutt.app_servitutt_app_servituttgruppe" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
+      <Join table="fkb_servitutt.app_servitutt_app_servituttgruppe" fromColumns="app_identifikasjon_app_identifikasjon_app_lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>
       <Complex path="app:Servituttgruppe">
         <Complex path="app:matrikkelnummer">
           <Complex path="app:Matrikkelnummer">
@@ -94,7 +94,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Servituttgrense" table="fkb_servitutt.app_servituttgrense">
     <FIDMapping prefix="app.Servituttgrense_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -139,7 +139,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:ServituttgrenseFiktiv" table="fkb_servitutt.app_servituttgrensefiktiv">
     <FIDMapping prefix="app.ServituttgrenseFiktiv_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">

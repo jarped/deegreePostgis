@@ -27,7 +27,7 @@ CREATE TABLE app_annenbygning (
     app_bygningstype text,
     app_medium text,
     app_innmålingsstatus text,
-    CONSTRAINT app_annenbygning_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_annenbygning_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_annenbygning','app_område_value','5972','GEOMETRY', 3); SELECT ADDGEOMETRYCOLUMN('', 'app_annenbygning','app_posisjon_value','5972','GEOMETRY', 3); CREATE TABLE app_arkade (
     attr_gml_id text,
     gml_identifier text,
@@ -56,7 +56,7 @@ CREATE TABLE app_annenbygning (
     app_grense_attr_nilreason text,
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
-    CONSTRAINT app_arkade_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_arkade_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_arkade','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_bygning (
     attr_gml_id text,
     gml_identifier text,
@@ -88,7 +88,7 @@ CREATE TABLE app_annenbygning (
     app_kommunenummer_attr_codespace text,
     app_innmålingsstatus text,
     app_medium text,
-    CONSTRAINT app_bygning_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_bygning_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_bygning','app_område_value','5972','GEOMETRY', 3); SELECT ADDGEOMETRYCOLUMN('', 'app_bygning','app_posisjon_value','5972','GEOMETRY', 3); CREATE TABLE app_bygning_app_sefrakident (
     id serial PRIMARY KEY,
     parentfk text NOT NULL REFERENCES app_bygning ON DELETE CASCADE,
@@ -123,7 +123,7 @@ CREATE TABLE app_annenbygning (
     app_grense_attr_nilreason text,
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
-    CONSTRAINT app_bygningbru_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_bygningbru_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_bygningbru','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_bygningsavgrensningtiltak (
     attr_gml_id text,
     gml_identifier text,
@@ -154,7 +154,7 @@ CREATE TABLE app_annenbygning (
     app_høyde numeric,
     app_høydereferanse text,
     app_høydeoverbakken numeric,
-    CONSTRAINT app_bygningsavgrensningtiltak_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_bygningsavgrensningtiltak_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_bygningsavgrensningtiltak','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_bygningsdelelinje (
     attr_gml_id text,
     gml_identifier text,
@@ -182,7 +182,7 @@ CREATE TABLE app_annenbygning (
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
     app_trednivå text,
-    CONSTRAINT app_bygningsdelelinje_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_bygningsdelelinje_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_bygningsdelelinje','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_bygningslinje (
     attr_gml_id text,
     gml_identifier text,
@@ -210,7 +210,7 @@ CREATE TABLE app_annenbygning (
     app_grense_attr_nilreason text,
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
-    CONSTRAINT app_bygningslinje_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_bygningslinje_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_bygningslinje','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_fasadeliv (
     attr_gml_id text,
     gml_identifier text,
@@ -240,7 +240,7 @@ CREATE TABLE app_annenbygning (
     app_medium text,
     app_høydereferanse text,
     app_skalavgrensebygning boolean,
-    CONSTRAINT app_fasadeliv_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_fasadeliv_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_fasadeliv','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_fiktivbygningsavgrensning (
     attr_gml_id text,
     gml_identifier text,
@@ -268,7 +268,7 @@ CREATE TABLE app_annenbygning (
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
     app_medium text,
-    CONSTRAINT app_fiktivbygningsavgrensning_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_fiktivbygningsavgrensning_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_fiktivbygningsavgrensning','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_grunnmur (
     attr_gml_id text,
     gml_identifier text,
@@ -297,7 +297,7 @@ CREATE TABLE app_annenbygning (
     app_grense_attr_owns boolean,
     app_medium text,
     app_høydereferanse text,
-    CONSTRAINT app_grunnmur_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_grunnmur_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_grunnmur','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_hjelpelinje3d (
     attr_gml_id text,
     gml_identifier text,
@@ -325,7 +325,7 @@ CREATE TABLE app_annenbygning (
     app_senterlinje_attr_nilreason text,
     app_senterlinje_attr_gml_remoteschema text,
     app_senterlinje_attr_owns boolean,
-    CONSTRAINT app_hjelpelinje3d_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_hjelpelinje3d_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_hjelpelinje3d','app_senterlinje_value','5972','GEOMETRY', 3); CREATE TABLE app_hjelpepunkt3d (
     attr_gml_id text,
     gml_identifier text,
@@ -353,7 +353,7 @@ CREATE TABLE app_annenbygning (
     app_posisjon_attr_nilreason text,
     app_posisjon_attr_gml_remoteschema text,
     app_posisjon_attr_owns boolean,
-    CONSTRAINT app_hjelpepunkt3d_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_hjelpepunkt3d_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_hjelpepunkt3d','app_posisjon_value','5972','GEOMETRY', 3); CREATE TABLE app_kantutsnitt (
     attr_gml_id text,
     gml_identifier text,
@@ -364,7 +364,7 @@ CREATE TABLE app_annenbygning (
     app_identifikasjon_app_identifikasjon_app_lokalid text,
     app_identifikasjon_app_identifikasjon_app_navnerom text,
     app_identifikasjon_app_identifikasjon_app_versjonid text,
-    CONSTRAINT app_kantutsnitt_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_kantutsnitt_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_kantutsnitt','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_låvebru (
     attr_gml_id text,
     gml_identifier text,
@@ -391,7 +391,7 @@ CREATE TABLE app_annenbygning (
     app_grense_attr_nilreason text,
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
-    CONSTRAINT app_låvebru_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_låvebru_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_låvebru','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_mønelinje (
     attr_gml_id text,
     gml_identifier text,
@@ -419,7 +419,7 @@ CREATE TABLE app_annenbygning (
     app_grense_attr_nilreason text,
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
-    CONSTRAINT app_mønelinje_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_mønelinje_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_mønelinje','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_portrom (
     attr_gml_id text,
     gml_identifier text,
@@ -448,7 +448,7 @@ CREATE TABLE app_annenbygning (
     app_grense_attr_nilreason text,
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
-    CONSTRAINT app_portrom_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_portrom_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_portrom','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_takmur (
     attr_gml_id text,
     gml_identifier text,
@@ -476,7 +476,7 @@ CREATE TABLE app_annenbygning (
     app_grense_attr_nilreason text,
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
-    CONSTRAINT app_takmur_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_takmur_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_takmur','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_takkant (
     attr_gml_id text,
     gml_identifier text,
@@ -506,7 +506,7 @@ CREATE TABLE app_annenbygning (
     app_medium text,
     app_trednivå text,
     app_takskjegg integer,
-    CONSTRAINT app_takkant_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_takkant_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_takkant','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_takoverbygg (
     attr_gml_id text,
     gml_identifier text,
@@ -531,7 +531,7 @@ CREATE TABLE app_annenbygning (
     app_posisjon_attr_nilreason text,
     app_posisjon_attr_gml_remoteschema text,
     app_posisjon_attr_owns boolean,
-    CONSTRAINT app_takoverbygg_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_takoverbygg_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_takoverbygg','app_område_value','5972','GEOMETRY', 3); SELECT ADDGEOMETRYCOLUMN('', 'app_takoverbygg','app_posisjon_value','5972','GEOMETRY', 3); CREATE TABLE app_takoverbyggkant (
     attr_gml_id text,
     gml_identifier text,
@@ -558,7 +558,7 @@ CREATE TABLE app_annenbygning (
     app_grense_attr_nilreason text,
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
-    CONSTRAINT app_takoverbyggkant_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_takoverbyggkant_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_takoverbyggkant','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_takplatå (
     attr_gml_id text,
     gml_identifier text,
@@ -586,7 +586,7 @@ CREATE TABLE app_annenbygning (
     app_grense_attr_nilreason text,
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
-    CONSTRAINT app_takplatå_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_takplatå_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_takplatå','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_takplatåtopp (
     attr_gml_id text,
     gml_identifier text,
@@ -614,7 +614,7 @@ CREATE TABLE app_annenbygning (
     app_grense_attr_nilreason text,
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
-    CONSTRAINT app_takplatåtopp_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_takplatåtopp_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_takplatåtopp','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_taksprang (
     attr_gml_id text,
     gml_identifier text,
@@ -642,7 +642,7 @@ CREATE TABLE app_annenbygning (
     app_grense_attr_nilreason text,
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
-    CONSTRAINT app_taksprang_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_taksprang_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_taksprang','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_taksprangbunn (
     attr_gml_id text,
     gml_identifier text,
@@ -670,7 +670,7 @@ CREATE TABLE app_annenbygning (
     app_grense_attr_nilreason text,
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
-    CONSTRAINT app_taksprangbunn_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_taksprangbunn_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_taksprangbunn','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_trappbygg (
     attr_gml_id text,
     gml_identifier text,
@@ -697,7 +697,7 @@ CREATE TABLE app_annenbygning (
     app_grense_attr_nilreason text,
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
-    CONSTRAINT app_trappbygg_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_trappbygg_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_trappbygg','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_veranda (
     attr_gml_id text,
     gml_identifier text,
@@ -726,5 +726,5 @@ CREATE TABLE app_annenbygning (
     app_grense_attr_owns boolean,
     app_høydereferanse text,
     app_medium text,
-    CONSTRAINT app_veranda_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_veranda_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_veranda','app_grense_value','5972','GEOMETRY', 3)

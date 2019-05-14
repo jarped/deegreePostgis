@@ -4,7 +4,7 @@
   <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/4.61/FKB-Arealbruk461.xsd</GMLSchema>
   <FeatureTypeMapping name="app:Alpinbakke" table="fkb_arealbruk.app_alpinbakke">
     <FIDMapping prefix="app.Alpinbakke_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -52,7 +52,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Anleggsområde" table="fkb_arealbruk.app_anleggsområde">
     <FIDMapping prefix="app.Anleggsområde_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -100,7 +100,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Arealbrukgrense" table="fkb_arealbruk.app_arealbrukgrense">
     <FIDMapping prefix="app.Arealbrukgrense_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -151,7 +151,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:ArealbrukgrenseFiktiv" table="fkb_arealbruk.app_arealbrukgrensefiktiv">
     <FIDMapping prefix="app.ArealbrukgrenseFiktiv_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -202,7 +202,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Campingplass" table="fkb_arealbruk.app_campingplass">
     <FIDMapping prefix="app.Campingplass_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -250,7 +250,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Golfbane" table="fkb_arealbruk.app_golfbane">
     <FIDMapping prefix="app.Golfbane_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -298,7 +298,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Gravplass" table="fkb_arealbruk.app_gravplass">
     <FIDMapping prefix="app.Gravplass_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -346,7 +346,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Grustak" table="fkb_arealbruk.app_grustak">
     <FIDMapping prefix="app.Grustak_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -394,7 +394,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Industriområde" table="fkb_arealbruk.app_industriområde">
     <FIDMapping prefix="app.Industriområde_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -442,7 +442,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:KantUtsnitt" table="fkb_arealbruk.app_kantutsnitt">
     <FIDMapping prefix="app.KantUtsnitt_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -465,7 +465,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Lekeplass" table="fkb_arealbruk.app_lekeplass">
     <FIDMapping prefix="app.Lekeplass_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -513,7 +513,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Park" table="fkb_arealbruk.app_park">
     <FIDMapping prefix="app.Park_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -561,7 +561,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Skytebane" table="fkb_arealbruk.app_skytebane">
     <FIDMapping prefix="app.Skytebane_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -609,7 +609,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:SportIdrettPlass" table="fkb_arealbruk.app_sportidrettplass">
     <FIDMapping prefix="app.SportIdrettPlass_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -657,7 +657,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Steintipp" table="fkb_arealbruk.app_steintipp">
     <FIDMapping prefix="app.Steintipp_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">

@@ -10,7 +10,7 @@ CREATE TABLE app_kantutsnitt (
     app_identifikasjon_app_identifikasjon_app_lokalid text,
     app_identifikasjon_app_identifikasjon_app_navnerom text,
     app_identifikasjon_app_identifikasjon_app_versjonid text,
-    CONSTRAINT app_kantutsnitt_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_kantutsnitt_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_kantutsnitt','app_grense_value','5973','GEOMETRY', 3); CREATE TABLE app_servitutt (
     attr_gml_id text,
     gml_identifier text,
@@ -35,7 +35,7 @@ CREATE TABLE app_kantutsnitt (
     app_posisjon_attr_nilreason text,
     app_posisjon_attr_gml_remoteschema text,
     app_posisjon_attr_owns boolean,
-    CONSTRAINT app_servitutt_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_servitutt_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_servitutt','app_område_value','5973','GEOMETRY', 3); SELECT ADDGEOMETRYCOLUMN('', 'app_servitutt','app_posisjon_value','5973','GEOMETRY', 3); CREATE TABLE app_servitutt_app_servituttgruppe (
     id serial PRIMARY KEY,
     parentfk text NOT NULL REFERENCES app_servitutt ON DELETE CASCADE,
@@ -72,7 +72,7 @@ CREATE TABLE app_kantutsnitt (
     app_følgerterrengdetalj text,
     app_administrativgrense text,
     app_jordskifterettensaksnummer text,
-    CONSTRAINT app_servituttgrense_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_servituttgrense_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_servituttgrense','app_grense_value','5973','GEOMETRY', 3); CREATE TABLE app_servituttgrensefiktiv (
     attr_gml_id text,
     gml_identifier text,
@@ -95,5 +95,5 @@ CREATE TABLE app_kantutsnitt (
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
     app_administrativgrense text,
-    CONSTRAINT app_servituttgrensefiktiv_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_servituttgrensefiktiv_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_servituttgrensefiktiv','app_grense_value','5973','GEOMETRY', 3)

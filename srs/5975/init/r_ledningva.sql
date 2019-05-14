@@ -26,7 +26,7 @@ CREATE TABLE app_kumlokk (
     app_senterlokk_attr_nilreason text,
     app_senterlokk_attr_gml_remoteschema text,
     app_senterlokk_attr_owns boolean,
-    CONSTRAINT app_kumlokk_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_kumlokk_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_kumlokk','app_senterlokk_value','5975','GEOMETRY', 3); CREATE TABLE app_va_hydrant (
     attr_gml_id text,
     gml_identifier text,
@@ -54,7 +54,7 @@ CREATE TABLE app_kumlokk (
     app_posisjon_attr_gml_remoteschema text,
     app_posisjon_attr_owns boolean,
     app_høydereferanse text,
-    CONSTRAINT app_va_hydrant_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_va_hydrant_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_va_hydrant','app_posisjon_value','5975','GEOMETRY', 3); CREATE TABLE app_va_sluk (
     attr_gml_id text,
     gml_identifier text,
@@ -81,5 +81,5 @@ CREATE TABLE app_kumlokk (
     app_posisjon_attr_nilreason text,
     app_posisjon_attr_gml_remoteschema text,
     app_posisjon_attr_owns boolean,
-    CONSTRAINT app_va_sluk_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_va_sluk_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_va_sluk','app_posisjon_value','5975','GEOMETRY', 3)

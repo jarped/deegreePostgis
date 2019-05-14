@@ -27,7 +27,7 @@ CREATE TABLE app_jernbaneplattformkant (
     app_grense_attr_nilreason text,
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
-    CONSTRAINT app_jernbaneplattformkant_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_jernbaneplattformkant_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_jernbaneplattformkant','app_grense_value','5973','GEOMETRY', 3); CREATE TABLE app_spormidt (
     attr_gml_id text,
     gml_identifier text,
@@ -57,5 +57,5 @@ CREATE TABLE app_jernbaneplattformkant (
     app_senterlinje_attr_owns boolean,
     app_jernbanetype text,
     app_jernbaneeier text,
-    CONSTRAINT app_spormidt_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_spormidt_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_spormidt','app_senterlinje_value','5973','GEOMETRY', 3)

@@ -4,7 +4,7 @@
   <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Ledning/4.6/FKB-Ledning46.xsd</GMLSchema>
   <FeatureTypeMapping name="app:EL_Belysningspunkt" table="fkb_ledning.app_el_belysningspunkt">
     <FIDMapping prefix="app.EL_Belysningspunkt_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -54,7 +54,7 @@
     </Complex>
     <Primitive path="app:driftsmerking" mapping="app_driftsmerking"/>
     <Complex path="app:eier">
-      <Join table="fkb_ledning.app_el_belysningspunkt_app_eier" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
+      <Join table="fkb_ledning.app_el_belysningspunkt_app_eier" fromColumns="app_identifikasjon_app_identifikasjon_app_lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>
       <Complex path="app:Eier">
         <Primitive path="app:eiertype" mapping="app_eier_app_eiertype"/>
         <Primitive path="app:eier" mapping="app_eier_app_eier"/>
@@ -70,7 +70,7 @@
     </Complex>
     <Primitive path="app:hovedbruk" mapping="app_hovedbruk"/>
     <Complex path="app:fellesføring">
-      <Join table="fkb_ledning.app_el_belysningspunkt_app_fellesføring" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
+      <Join table="fkb_ledning.app_el_belysningspunkt_app_fellesføring" fromColumns="app_identifikasjon_app_identifikasjon_app_lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>
       <Complex path="app:Fellesføring">
         <Primitive path="app:fellesføringType" mapping="app_fellesføring_app_fellesføringtype"/>
         <Primitive path="app:leietaker" mapping="app_fellesføring_app_leietaker"/>
@@ -81,7 +81,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:EL_Flymarkør" table="fkb_ledning.app_el_flymarkør">
     <FIDMapping prefix="app.EL_Flymarkør_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -131,7 +131,7 @@
     </Complex>
     <Primitive path="app:driftsmerking" mapping="app_driftsmerking"/>
     <Complex path="app:eier">
-      <Join table="fkb_ledning.app_el_flymarkør_app_eier" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
+      <Join table="fkb_ledning.app_el_flymarkør_app_eier" fromColumns="app_identifikasjon_app_identifikasjon_app_lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>
       <Complex path="app:Eier">
         <Primitive path="app:eiertype" mapping="app_eier_app_eiertype"/>
         <Primitive path="app:eier" mapping="app_eier_app_eier"/>
@@ -149,7 +149,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:EL_Nettstasjon" table="fkb_ledning.app_el_nettstasjon">
     <FIDMapping prefix="app.EL_Nettstasjon_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -199,7 +199,7 @@
     </Complex>
     <Primitive path="app:driftsmerking" mapping="app_driftsmerking"/>
     <Complex path="app:eier">
-      <Join table="fkb_ledning.app_el_nettstasjon_app_eier" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
+      <Join table="fkb_ledning.app_el_nettstasjon_app_eier" fromColumns="app_identifikasjon_app_identifikasjon_app_lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>
       <Complex path="app:Eier">
         <Primitive path="app:eiertype" mapping="app_eier_app_eiertype"/>
         <Primitive path="app:eier" mapping="app_eier_app_eier"/>
@@ -218,7 +218,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:EL_Vindturbin" table="fkb_ledning.app_el_vindturbin">
     <FIDMapping prefix="app.EL_Vindturbin_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -268,7 +268,7 @@
     </Complex>
     <Primitive path="app:driftsmerking" mapping="app_driftsmerking"/>
     <Complex path="app:eier">
-      <Join table="fkb_ledning.app_el_vindturbin_app_eier" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
+      <Join table="fkb_ledning.app_el_vindturbin_app_eier" fromColumns="app_identifikasjon_app_identifikasjon_app_lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>
       <Complex path="app:Eier">
         <Primitive path="app:eiertype" mapping="app_eier_app_eiertype"/>
         <Primitive path="app:eier" mapping="app_eier_app_eier"/>
@@ -287,7 +287,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Kanal" table="fkb_ledning.app_kanal">
     <FIDMapping prefix="app.Kanal_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -337,7 +337,7 @@
     </Complex>
     <Primitive path="app:driftsmerking" mapping="app_driftsmerking"/>
     <Complex path="app:eier">
-      <Join table="fkb_ledning.app_kanal_app_eier" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
+      <Join table="fkb_ledning.app_kanal_app_eier" fromColumns="app_identifikasjon_app_identifikasjon_app_lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>
       <Complex path="app:Eier">
         <Primitive path="app:eiertype" mapping="app_eier_app_eiertype"/>
         <Primitive path="app:eier" mapping="app_eier_app_eier"/>
@@ -355,7 +355,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:LednKum" table="fkb_ledning.app_lednkum">
     <FIDMapping prefix="app.LednKum_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -405,7 +405,7 @@
     </Complex>
     <Primitive path="app:driftsmerking" mapping="app_driftsmerking"/>
     <Complex path="app:eier">
-      <Join table="fkb_ledning.app_lednkum_app_eier" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
+      <Join table="fkb_ledning.app_lednkum_app_eier" fromColumns="app_identifikasjon_app_identifikasjon_app_lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>
       <Complex path="app:Eier">
         <Primitive path="app:eiertype" mapping="app_eier_app_eiertype"/>
         <Primitive path="app:eier" mapping="app_eier_app_eier"/>
@@ -421,7 +421,7 @@
     </Complex>
     <Primitive path="app:hovedbruk" mapping="app_hovedbruk"/>
     <Complex path="app:fellesføring">
-      <Join table="fkb_ledning.app_lednkum_app_fellesføring" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
+      <Join table="fkb_ledning.app_lednkum_app_fellesføring" fromColumns="app_identifikasjon_app_identifikasjon_app_lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>
       <Complex path="app:Fellesføring">
         <Primitive path="app:fellesføringType" mapping="app_fellesføring_app_fellesføringtype"/>
         <Primitive path="app:leietaker" mapping="app_fellesføring_app_leietaker"/>
@@ -431,7 +431,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Mast" table="fkb_ledning.app_mast">
     <FIDMapping prefix="app.Mast_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -481,7 +481,7 @@
     </Complex>
     <Primitive path="app:driftsmerking" mapping="app_driftsmerking"/>
     <Complex path="app:eier">
-      <Join table="fkb_ledning.app_mast_app_eier" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
+      <Join table="fkb_ledning.app_mast_app_eier" fromColumns="app_identifikasjon_app_identifikasjon_app_lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>
       <Complex path="app:Eier">
         <Primitive path="app:eiertype" mapping="app_eier_app_eiertype"/>
         <Primitive path="app:eier" mapping="app_eier_app_eier"/>
@@ -497,7 +497,7 @@
     </Complex>
     <Primitive path="app:hovedbruk" mapping="app_hovedbruk"/>
     <Complex path="app:fellesføring">
-      <Join table="fkb_ledning.app_mast_app_fellesføring" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
+      <Join table="fkb_ledning.app_mast_app_fellesføring" fromColumns="app_identifikasjon_app_identifikasjon_app_lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>
       <Complex path="app:Fellesføring">
         <Primitive path="app:fellesføringType" mapping="app_fellesføring_app_fellesføringtype"/>
         <Primitive path="app:leietaker" mapping="app_fellesføring_app_leietaker"/>
@@ -516,7 +516,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Masteomriss" table="fkb_ledning.app_masteomriss">
     <FIDMapping prefix="app.Masteomriss_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -571,7 +571,7 @@
       <Geometry path="." mapping="app_omriss_value"/>
     </Complex>
     <Complex path="app:eier">
-      <Join table="fkb_ledning.app_masteomriss_app_eier" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
+      <Join table="fkb_ledning.app_masteomriss_app_eier" fromColumns="app_identifikasjon_app_identifikasjon_app_lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>
       <Complex path="app:Eier">
         <Primitive path="app:eiertype" mapping="app_eier_app_eiertype"/>
         <Primitive path="app:eier" mapping="app_eier_app_eier"/>
@@ -585,7 +585,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:NettstasjonAdkomst" table="fkb_ledning.app_nettstasjonadkomst">
     <FIDMapping prefix="app.NettstasjonAdkomst_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -640,7 +640,7 @@
       <Geometry path="." mapping="app_posisjon_value"/>
     </Complex>
     <Complex path="app:eier">
-      <Join table="fkb_ledning.app_nettstasjonadkomst_app_eier" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
+      <Join table="fkb_ledning.app_nettstasjonadkomst_app_eier" fromColumns="app_identifikasjon_app_identifikasjon_app_lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>
       <Complex path="app:Eier">
         <Primitive path="app:eiertype" mapping="app_eier_app_eiertype"/>
         <Primitive path="app:eier" mapping="app_eier_app_eier"/>
@@ -653,7 +653,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Nettverkstasjonomriss" table="fkb_ledning.app_nettverkstasjonomriss">
     <FIDMapping prefix="app.Nettverkstasjonomriss_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -708,7 +708,7 @@
       <Geometry path="." mapping="app_omriss_value"/>
     </Complex>
     <Complex path="app:eier">
-      <Join table="fkb_ledning.app_nettverkstasjonomriss_app_eier" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
+      <Join table="fkb_ledning.app_nettverkstasjonomriss_app_eier" fromColumns="app_identifikasjon_app_identifikasjon_app_lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>
       <Complex path="app:Eier">
         <Primitive path="app:eiertype" mapping="app_eier_app_eiertype"/>
         <Primitive path="app:eier" mapping="app_eier_app_eier"/>
@@ -721,7 +721,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Skap" table="fkb_ledning.app_skap">
     <FIDMapping prefix="app.Skap_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -771,7 +771,7 @@
     </Complex>
     <Primitive path="app:driftsmerking" mapping="app_driftsmerking"/>
     <Complex path="app:eier">
-      <Join table="fkb_ledning.app_skap_app_eier" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
+      <Join table="fkb_ledning.app_skap_app_eier" fromColumns="app_identifikasjon_app_identifikasjon_app_lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>
       <Complex path="app:Eier">
         <Primitive path="app:eiertype" mapping="app_eier_app_eiertype"/>
         <Primitive path="app:eier" mapping="app_eier_app_eier"/>
@@ -789,7 +789,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Trase" table="fkb_ledning.app_trase">
     <FIDMapping prefix="app.Trase_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -839,7 +839,7 @@
     </Complex>
     <Primitive path="app:driftsmerking" mapping="app_driftsmerking"/>
     <Complex path="app:eier">
-      <Join table="fkb_ledning.app_trase_app_eier" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
+      <Join table="fkb_ledning.app_trase_app_eier" fromColumns="app_identifikasjon_app_identifikasjon_app_lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>
       <Complex path="app:Eier">
         <Primitive path="app:eiertype" mapping="app_eier_app_eiertype"/>
         <Primitive path="app:eier" mapping="app_eier_app_eier"/>
@@ -871,7 +871,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Åk" table="fkb_ledning.app_åk">
     <FIDMapping prefix="app.Åk_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -921,7 +921,7 @@
     </Complex>
     <Primitive path="app:driftsmerking" mapping="app_driftsmerking"/>
     <Complex path="app:eier">
-      <Join table="fkb_ledning.app_åk_app_eier" fromColumns="attr_gml_id" toColumns="parentfk" orderColumns="num" numbered="true"/>
+      <Join table="fkb_ledning.app_åk_app_eier" fromColumns="app_identifikasjon_app_identifikasjon_app_lokalid" toColumns="parentfk" orderColumns="num" numbered="true"/>
       <Complex path="app:Eier">
         <Primitive path="app:eiertype" mapping="app_eier_app_eiertype"/>
         <Primitive path="app:eier" mapping="app_eier_app_eier"/>

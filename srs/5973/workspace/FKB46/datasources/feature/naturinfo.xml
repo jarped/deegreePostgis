@@ -4,7 +4,7 @@
   <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Naturinfo/4.6/FKB-Naturinfo46.xsd</GMLSchema>
   <FeatureTypeMapping name="app:Allé" table="fkb_naturinfo.app_allé">
     <FIDMapping prefix="APP_ALLÉ_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -57,7 +57,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Hekk" table="fkb_naturinfo.app_hekk">
     <FIDMapping prefix="APP_HEKK_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -110,7 +110,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:InnmåltTre" table="fkb_naturinfo.app_innmålttre">
     <FIDMapping prefix="APP_INNMÅLTTRE_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -163,7 +163,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:KantUtsnitt" table="fkb_naturinfo.app_kantutsnitt">
     <FIDMapping prefix="APP_KANTUTSNITT_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -186,7 +186,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Stein" table="fkb_naturinfo.app_stein">
     <FIDMapping prefix="APP_STEIN_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -234,7 +234,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:SteinOmriss" table="fkb_naturinfo.app_steinomriss">
     <FIDMapping prefix="APP_STEINOMRISS_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">

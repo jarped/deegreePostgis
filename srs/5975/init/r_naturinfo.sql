@@ -28,7 +28,7 @@ CREATE TABLE app_allé (
     app_senterlinje_attr_owns boolean,
     app_tretype text,
     app_høydereferanse text,
-    CONSTRAINT app_allé_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_allé_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_allé','app_senterlinje_value','5975','GEOMETRY', 3); CREATE TABLE app_hekk (
     attr_gml_id text,
     gml_identifier text,
@@ -57,7 +57,7 @@ CREATE TABLE app_allé (
     app_senterlinje_attr_owns boolean,
     app_tretype text,
     app_høydereferanse text,
-    CONSTRAINT app_hekk_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_hekk_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_hekk','app_senterlinje_value','5975','GEOMETRY', 3); CREATE TABLE app_innmålttre (
     attr_gml_id text,
     gml_identifier text,
@@ -86,7 +86,7 @@ CREATE TABLE app_allé (
     app_posisjon_attr_owns boolean,
     app_tretype text,
     app_høydereferanse text,
-    CONSTRAINT app_innmålttre_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_innmålttre_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_innmålttre','app_posisjon_value','5975','GEOMETRY', 3); CREATE TABLE app_kantutsnitt (
     attr_gml_id text,
     gml_identifier text,
@@ -97,7 +97,7 @@ CREATE TABLE app_allé (
     app_identifikasjon_app_identifikasjon_app_lokalid text,
     app_identifikasjon_app_identifikasjon_app_navnerom text,
     app_identifikasjon_app_identifikasjon_app_versjonid text,
-    CONSTRAINT app_kantutsnitt_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_kantutsnitt_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_kantutsnitt','app_grense_value','5975','GEOMETRY', 3); CREATE TABLE app_stein (
     attr_gml_id text,
     gml_identifier text,
@@ -122,7 +122,7 @@ CREATE TABLE app_allé (
     app_posisjon_attr_nilreason text,
     app_posisjon_attr_gml_remoteschema text,
     app_posisjon_attr_owns boolean,
-    CONSTRAINT app_stein_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_stein_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_stein','app_område_value','5975','GEOMETRY', 3); SELECT ADDGEOMETRYCOLUMN('', 'app_stein','app_posisjon_value','5975','GEOMETRY', 3); CREATE TABLE app_steinomriss (
     attr_gml_id text,
     gml_identifier text,
@@ -150,5 +150,5 @@ CREATE TABLE app_allé (
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
     app_høydereferanse text,
-    CONSTRAINT app_steinomriss_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_steinomriss_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_steinomriss','app_grense_value','5975','GEOMETRY', 3)

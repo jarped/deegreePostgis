@@ -4,7 +4,7 @@
   <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Bane/4.6/FKB-Bane46.xsd</GMLSchema>
   <FeatureTypeMapping name="app:Jernbaneplattformkant" table="fkb_bane.app_jernbaneplattformkant">
     <FIDMapping prefix="APP_JERNBANEPLATTFORMKANT_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -56,7 +56,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Spormidt" table="fkb_bane.app_spormidt">
     <FIDMapping prefix="APP_SPORMIDT_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">

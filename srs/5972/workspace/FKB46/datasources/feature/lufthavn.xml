@@ -4,7 +4,7 @@
   <GMLSchema>http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Lufthavn/4.6/FKB-Lufthavn46.xsd</GMLSchema>
   <FeatureTypeMapping name="app:Lufthavnlys" table="fkb_lufthavn.app_lufthavnlys">
     <FIDMapping prefix="app.Lufthavnlys_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -56,7 +56,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Plattformgrense" table="fkb_lufthavn.app_plattformgrense">
     <FIDMapping prefix="app.Plattformgrense_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -107,7 +107,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Rullebanegrense" table="fkb_lufthavn.app_rullebanegrense">
     <FIDMapping prefix="app.Rullebanegrense_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">
@@ -158,7 +158,7 @@
   </FeatureTypeMapping>
   <FeatureTypeMapping name="app:Taksebanegrense" table="fkb_lufthavn.app_taksebanegrense">
     <FIDMapping prefix="app.Taksebanegrense_">
-      <Column name="attr_gml_id" type="string"/>
+      <Column name="app_identifikasjon_app_identifikasjon_app_lokalid" type="string"/>
       <UUIDGenerator/>
     </FIDMapping>
     <Complex path="gml:identifier">

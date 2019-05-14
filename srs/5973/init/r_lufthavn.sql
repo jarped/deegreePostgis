@@ -27,7 +27,7 @@ CREATE TABLE app_lufthavnlys (
     app_posisjon_attr_gml_remoteschema text,
     app_posisjon_attr_owns boolean,
     app_lufthavnlystype text,
-    CONSTRAINT app_lufthavnlys_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_lufthavnlys_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_lufthavnlys','app_posisjon_value','5973','GEOMETRY', 3); CREATE TABLE app_plattformgrense (
     attr_gml_id text,
     gml_identifier text,
@@ -54,7 +54,7 @@ CREATE TABLE app_lufthavnlys (
     app_grense_attr_nilreason text,
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
-    CONSTRAINT app_plattformgrense_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_plattformgrense_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_plattformgrense','app_grense_value','5973','GEOMETRY', 3); CREATE TABLE app_rullebanegrense (
     attr_gml_id text,
     gml_identifier text,
@@ -81,7 +81,7 @@ CREATE TABLE app_lufthavnlys (
     app_grense_attr_nilreason text,
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
-    CONSTRAINT app_rullebanegrense_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_rullebanegrense_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_rullebanegrense','app_grense_value','5973','GEOMETRY', 3); CREATE TABLE app_taksebanegrense (
     attr_gml_id text,
     gml_identifier text,
@@ -108,5 +108,5 @@ CREATE TABLE app_lufthavnlys (
     app_grense_attr_nilreason text,
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
-    CONSTRAINT app_taksebanegrense_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_taksebanegrense_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_taksebanegrense','app_grense_value','5973','GEOMETRY', 3)

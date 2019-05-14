@@ -26,7 +26,7 @@ CREATE TABLE app_bruddlinje (
     app_senterlinje_attr_nilreason text,
     app_senterlinje_attr_gml_remoteschema text,
     app_senterlinje_attr_owns boolean,
-    CONSTRAINT app_bruddlinje_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_bruddlinje_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_bruddlinje','app_senterlinje_value','5972','GEOMETRY', 3); CREATE TABLE app_dtmpunkt (
     attr_gml_id text,
     gml_identifier text,
@@ -54,7 +54,7 @@ CREATE TABLE app_bruddlinje (
     app_posisjon_attr_gml_remoteschema text,
     app_posisjon_attr_owns boolean,
     app_høyde numeric,
-    CONSTRAINT app_dtmpunkt_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_dtmpunkt_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_dtmpunkt','app_posisjon_value','5972','GEOMETRY', 3); CREATE TABLE app_forsenkningskurve (
     attr_gml_id text,
     gml_identifier text,
@@ -83,7 +83,7 @@ CREATE TABLE app_bruddlinje (
     app_senterlinje_attr_owns boolean,
     app_høyde numeric,
     app_medium text,
-    CONSTRAINT app_forsenkningskurve_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_forsenkningskurve_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_forsenkningskurve','app_senterlinje_value','5972','GEOMETRY', 3); CREATE TABLE app_forsenkningspunkt (
     attr_gml_id text,
     gml_identifier text,
@@ -112,7 +112,7 @@ CREATE TABLE app_bruddlinje (
     app_posisjon_attr_owns boolean,
     app_høyde numeric,
     app_medium text,
-    CONSTRAINT app_forsenkningspunkt_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_forsenkningspunkt_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_forsenkningspunkt','app_posisjon_value','5972','GEOMETRY', 3); CREATE TABLE app_fyllingkant (
     attr_gml_id text,
     gml_identifier text,
@@ -139,7 +139,7 @@ CREATE TABLE app_bruddlinje (
     app_grense_attr_nilreason text,
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
-    CONSTRAINT app_fyllingkant_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_fyllingkant_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_fyllingkant','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_hjelpekurve (
     attr_gml_id text,
     gml_identifier text,
@@ -168,7 +168,7 @@ CREATE TABLE app_bruddlinje (
     app_senterlinje_attr_owns boolean,
     app_høyde numeric,
     app_medium text,
-    CONSTRAINT app_hjelpekurve_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_hjelpekurve_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_hjelpekurve','app_senterlinje_value','5972','GEOMETRY', 3); CREATE TABLE app_høydekurve (
     attr_gml_id text,
     gml_identifier text,
@@ -197,7 +197,7 @@ CREATE TABLE app_bruddlinje (
     app_senterlinje_attr_owns boolean,
     app_høyde numeric,
     app_medium text,
-    CONSTRAINT app_høydekurve_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_høydekurve_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_høydekurve','app_senterlinje_value','5972','GEOMETRY', 3); CREATE TABLE app_skjæringkant (
     attr_gml_id text,
     gml_identifier text,
@@ -224,7 +224,7 @@ CREATE TABLE app_bruddlinje (
     app_grense_attr_nilreason text,
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
-    CONSTRAINT app_skjæringkant_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_skjæringkant_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_skjæringkant','app_grense_value','5972','GEOMETRY', 3); CREATE TABLE app_terrenglinje (
     attr_gml_id text,
     gml_identifier text,
@@ -251,7 +251,7 @@ CREATE TABLE app_bruddlinje (
     app_senterlinje_attr_nilreason text,
     app_senterlinje_attr_gml_remoteschema text,
     app_senterlinje_attr_owns boolean,
-    CONSTRAINT app_terrenglinje_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_terrenglinje_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_terrenglinje','app_senterlinje_value','5972','GEOMETRY', 3); CREATE TABLE app_terrenglinjebygg (
     attr_gml_id text,
     gml_identifier text,
@@ -278,7 +278,7 @@ CREATE TABLE app_bruddlinje (
     app_senterlinje_attr_nilreason text,
     app_senterlinje_attr_gml_remoteschema text,
     app_senterlinje_attr_owns boolean,
-    CONSTRAINT app_terrenglinjebygg_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_terrenglinjebygg_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_terrenglinjebygg','app_senterlinje_value','5972','GEOMETRY', 3); CREATE TABLE app_terrenglinjeveg (
     attr_gml_id text,
     gml_identifier text,
@@ -305,7 +305,7 @@ CREATE TABLE app_bruddlinje (
     app_senterlinje_attr_nilreason text,
     app_senterlinje_attr_gml_remoteschema text,
     app_senterlinje_attr_owns boolean,
-    CONSTRAINT app_terrenglinjeveg_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_terrenglinjeveg_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_terrenglinjeveg','app_senterlinje_value','5972','GEOMETRY', 3); CREATE TABLE app_terrengpunkt (
     attr_gml_id text,
     gml_identifier text,
@@ -334,7 +334,7 @@ CREATE TABLE app_bruddlinje (
     app_posisjon_attr_owns boolean,
     app_høyde numeric,
     app_medium text,
-    CONSTRAINT app_terrengpunkt_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_terrengpunkt_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_terrengpunkt','app_posisjon_value','5972','GEOMETRY', 3); CREATE TABLE app_toppunkt (
     attr_gml_id text,
     gml_identifier text,
@@ -363,5 +363,5 @@ CREATE TABLE app_bruddlinje (
     app_posisjon_attr_owns boolean,
     app_høyde numeric,
     app_medium text,
-    CONSTRAINT app_toppunkt_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_toppunkt_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_toppunkt','app_posisjon_value','5972','GEOMETRY', 3)

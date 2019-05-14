@@ -31,7 +31,7 @@ CREATE TABLE app_andretiltak (
     app_andretiltak text,
     app_kartregistrering text,
     app_saksnummer integer,
-    CONSTRAINT app_andretiltak_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_andretiltak_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_andretiltak','app_område_value','5975','GEOMETRY', 3); SELECT ADDGEOMETRYCOLUMN('', 'app_andretiltak','app_senterlinje_value','5975','GEOMETRY', 3); SELECT ADDGEOMETRYCOLUMN('', 'app_andretiltak','app_posisjon_value','5975','GEOMETRY', 3); CREATE TABLE app_kantutsnitt (
     attr_gml_id text,
     gml_identifier text,
@@ -42,7 +42,7 @@ CREATE TABLE app_andretiltak (
     app_identifikasjon_app_identifikasjon_app_lokalid text,
     app_identifikasjon_app_identifikasjon_app_navnerom text,
     app_identifikasjon_app_identifikasjon_app_versjonid text,
-    CONSTRAINT app_kantutsnitt_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_kantutsnitt_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_kantutsnitt','app_grense_value','5975','GEOMETRY', 3); CREATE TABLE app_pblsøknad (
     attr_gml_id text,
     gml_identifier text,
@@ -75,7 +75,7 @@ CREATE TABLE app_andretiltak (
     app_sakstype text,
     app_saksomfang text,
     app_behandlingsstatus text,
-    CONSTRAINT app_pblsøknad_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_pblsøknad_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_pblsøknad','app_område_value','5975','GEOMETRY', 3); SELECT ADDGEOMETRYCOLUMN('', 'app_pblsøknad','app_senterlinje_value','5975','GEOMETRY', 3); SELECT ADDGEOMETRYCOLUMN('', 'app_pblsøknad','app_posisjon_value','5975','GEOMETRY', 3); CREATE TABLE app_pblsøknadgrense (
     attr_gml_id text,
     gml_identifier text,
@@ -98,7 +98,7 @@ CREATE TABLE app_andretiltak (
     app_grense_attr_nilreason text,
     app_grense_attr_gml_remoteschema text,
     app_grense_attr_owns boolean,
-    CONSTRAINT app_pblsøknadgrense_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_pblsøknadgrense_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_pblsøknadgrense','app_grense_value','5975','GEOMETRY', 3); CREATE TABLE app_pbltiltak (
     attr_gml_id text,
     gml_identifier text,
@@ -139,7 +139,7 @@ CREATE TABLE app_andretiltak (
     app_vedtakstype text,
     app_registreringsmetode text,
     app_tiltaksbeskrivelse text,
-    CONSTRAINT app_pbltiltak_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_pbltiltak_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_pbltiltak','app_område_value','5975','GEOMETRY', 3); SELECT ADDGEOMETRYCOLUMN('', 'app_pbltiltak','app_senterlinje_value','5975','GEOMETRY', 3); SELECT ADDGEOMETRYCOLUMN('', 'app_pbltiltak','app_posisjon_value','5975','GEOMETRY', 3); CREATE TABLE app_tiltakgrense (
     attr_gml_id text,
     gml_identifier text,
@@ -167,5 +167,5 @@ CREATE TABLE app_andretiltak (
     app_høydereferanse text,
     app_høydeoverbakken numeric,
     app_vertikalnivå text,
-    CONSTRAINT app_tiltakgrense_pkey PRIMARY KEY (attr_gml_id)
+    CONSTRAINT app_tiltakgrense_pkey PRIMARY KEY (app_identifikasjon_app_identifikasjon_app_lokalid)
 ); SELECT ADDGEOMETRYCOLUMN('', 'app_tiltakgrense','app_grense_value','5975','GEOMETRY', 3)
