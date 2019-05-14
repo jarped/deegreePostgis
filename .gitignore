@@ -3,3 +3,4 @@ data
 subscriber
 **/bbox_cache.properties
 .env
+.vscode/*
