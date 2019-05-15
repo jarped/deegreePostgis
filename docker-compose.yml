@@ -2,11 +2,11 @@ version: '3.7'
 
 services:
   postgresql:
-    container_name: deegreepostgis-db-${epsg}
+    container_name: deegreepostgis-db-${epsg}-${dataset}
     build: 
       context: ./
       dockerfile: Dockerfile_db_${epsg}_${dataset}
-    image: deegreepostgis-db-${epsg}
+    image: geosynchronization/postgis-${epsg}-${dataset}
     # volumes:
     #   - db-volume-${epsg}:/var/lib/postgresql/data
     ports:
@@ -17,7 +17,7 @@ services:
       POSTGRES_DB: ${dataset}
 
   deegree:
-    container_name: deegreepostgis-wfs-${epsg}
+    container_name: deegreepostgis-wfs-${epsg}-${dataset}
     image: geosynchronization/deegree3
     depends_on:
       - postgresql
@@ -29,14 +29,20 @@ services:
     environment:
       DEEGREE_WORKSPACE_ROOT: /deegree
 
-  # subscriber:
-  #   container_name: deegreepostgis_subscriber
-  #   image: geosynchronization/coresubscriber
-  #   volumes:
-  #     - ./subscriber:/data
-  #   command: ["dotnet", "CORESubscriber.dll", "add", "${providerurl}", "${username}", "${password}", "/data/${providerSettings}.xml"]
+  subscriber:
+    depends_on:
+      - deegree
+    container_name: deegreepostgis-subscriber
+    image: geosynchronization/coresubscriber
+    volumes:
+      - ./subscriber:/data
+    command: sh -c "crontab /data/cron; crond -f"
 
-volumes:
-  db-volume-5972:
-  db-volume-5973:
-  db-volume-5975:
+    # command: "crontab /data/cron && crond"
+    # command: ["dotnet", "CORESubscriber.dll", "sync", "/data/provider.xml"]
+    # command: ["dotnet", "CORESubscriber.dll", "add", "${providerurl}", "${username}", "${password}", "/data/${providerSettings}.xml"]
+
+# volumes:
+#   db-volume-5972:
+#   db-volume-5973:
+#   db-volume-5975:
