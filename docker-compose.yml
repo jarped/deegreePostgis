@@ -7,14 +7,14 @@ services:
       context: ./
       dockerfile: Dockerfile_db_${epsg}_${dataset}
     image: geosynchronization/postgis-${epsg}-${dataset}
-    # volumes:
-    #   - db-volume-${epsg}:/var/lib/postgresql/data
+    volumes:
+      - db-volume:/var/lib/postgresql/data
     ports:
       - "5444:5432"
     restart: always
     environment:
       POSTGRES_PASSWORD: mysecretpassword
-      POSTGRES_DB: ${dataset}
+      POSTGRES_DB: ${dataset}_${epsg}
 
   deegree:
     container_name: deegreepostgis-wfs-${epsg}-${dataset}
@@ -42,7 +42,5 @@ services:
     # command: ["dotnet", "CORESubscriber.dll", "sync", "/data/provider.xml"]
     # command: ["dotnet", "CORESubscriber.dll", "add", "${providerurl}", "${username}", "${password}", "/data/${providerSettings}.xml"]
 
-# volumes:
-#   db-volume-5972:
-#   db-volume-5973:
-#   db-volume-5975:
+volumes:
+  db-volume:
