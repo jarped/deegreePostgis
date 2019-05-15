@@ -1,0 +1,2 @@
+FROM mdillon/postgis
+COPY srs/5973/fkb/init/*.* /docker-entrypoint-initdb.d/

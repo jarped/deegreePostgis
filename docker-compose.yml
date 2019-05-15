@@ -5,16 +5,16 @@ services:
     container_name: deegreepostgis-db-${epsg}
     build: 
       context: ./
-      dockerfile: Dockerfile_db_${epsg}
-    image: deegreepostgis
-    volumes:
-      - db-volume-${epsg}:/var/lib/postgresql/data
+      dockerfile: Dockerfile_db_${epsg}_${dataset}
+    image: deegreepostgis-db-${epsg}
+    # volumes:
+    #   - db-volume-${epsg}:/var/lib/postgresql/data
     ports:
       - "5444:5432"
     restart: always
     environment:
       POSTGRES_PASSWORD: mysecretpassword
-      POSTGRES_DB: development
+      POSTGRES_DB: ${dataset}
 
   deegree:
     container_name: deegreepostgis-wfs-${epsg}
@@ -24,7 +24,7 @@ services:
     ports:
       - "8181:8080"
     volumes:
-      - ./srs/${epsg}/workspace:/deegree
+      - ./srs/${epsg}/${dataset}/workspace:/deegree
     restart: always
     environment:
       DEEGREE_WORKSPACE_ROOT: /deegree
