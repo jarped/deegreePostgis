@@ -50,14 +50,14 @@ services:
     container_name: geosynchronization-config
     image: geosynchronization/coresubscriber
     volumes:
-      - ./subscriber/providers/${providerName}:/provider
+      - ./subscriber/providers:/providers
     environment:
       providerurl: ${providerurl}
       username: ${username}
       password: ${password}
       epsg: ${epsg}
       dataset: ${dataset}
-    command: sh -c "if [ -s /provider/config.xml ]; then exit 0; fi; dotnet CORESubscriber.dll add $${providerurl} $${username} $${password} /provider/config.template.xml;  cat /provider/config.template.xml | sed 's/<subscribed>False<\/subscribed>/<subscribed>True<\/subscribed>/gi' | sed 's/<wfsClient><\/wfsClient>/<wfsClient>http:\/\/geosynchronization-wfs-${epsg}-${dataset}:8080\/services\/wfs<\/wfsClient>/gi' > /provider/config.xml"
+    command: sh -c "mkdir -p /providers/$${providerName}; if [ -s /providers/$${providerName}/config.xml ]; then exit 0; fi; dotnet CORESubscriber.dll add $${providerurl} $${username} $${password} /providers/$${providerName}/config.template.xml;  cat /providers/$${providerName}/config.template.xml | sed 's/<subscribed>False<\/subscribed>/<subscribed>True<\/subscribed>/gi' | sed 's/<wfsClient><\/wfsClient>/<wfsClient>http:\/\/geosynchronization-wfs-${epsg}-${dataset}:8080\/services\/wfs<\/wfsClient>/gi' > /providers/$${providerName}/config.xml"
 
 volumes:
   geosynchronization-db-volume-5972-fkb:
