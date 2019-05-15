@@ -35,8 +35,9 @@ services:
     container_name: deegreepostgis-subscriber
     image: geosynchronization/coresubscriber
     volumes:
-      - ./subscriber:/data
-    command: sh -c "crontab /data/cron; crond -f"
+      - ./subscriber/providers/${providerName}:/provider
+      - ./subscriber/cron:/cron
+    command: sh -c "crontab /cron/cron; crond -f"
 
     # command: "crontab /data/cron && crond"
     # command: ["dotnet", "CORESubscriber.dll", "sync", "/data/provider.xml"]

@@ -1,6 +1,6 @@
 web/geoinnsyn
 data
-subscriber
+subscriber/providers
 **/bbox_cache.properties
 .env
 .vscode/*

@@ -1,0 +1,1 @@
+* * * * * cd /app; echo "Sync starting"; dotnet CORESubscriber.dll sync /provider/config.xml /tmp; echo "Sync finished"
