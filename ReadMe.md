@@ -2,12 +2,23 @@
 
 Create a file named .env and fill it with the following values:
 ``` 
-providerName=providerName # A unique name for this provider
-providerurl=https://some-url-to-provider # Provider endpoint
-username=Username # Username
-password=Password # Password
-epsg=5972 # Epsg-code ( 5972 | 5973 | 5975 )
-dataset=fkb # Dataset ( fkb | reguleringsplan)
+# A unique name for this provider
+providerName=providerName 
+
+# Provider endpoint
+providerurl=https://some-url-to-provider 
+
+# Username
+username=Username 
+
+# Password
+password=Password 
+
+# Epsg-code ( 5972 | 5973 | 5975 )
+epsg=5972 
+
+# Dataset ( fkb | reguleringsplan)
+dataset=fkb 
 ``` 
 
 ## Starting first time
