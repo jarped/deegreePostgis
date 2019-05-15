@@ -3,6 +3,9 @@
 Create a file named .env and fill it with the following values:
 ``` 
 providerName=providerName # A unique name for this provider
+providerurl=https://some-url-to-provider # Provider endpoint
+username=Username # Username
+password=Password # Password
 epsg=5972 # Epsg-code ( 5972 | 5973 | 5975 )
 dataset=fkb # Dataset ( fkb | reguleringsplan)
 ``` 
