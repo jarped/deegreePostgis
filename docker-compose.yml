@@ -2,13 +2,13 @@ version: '3.7'
 
 services:
   postgresql:
-    container_name: deegreepostgis_db
+    container_name: deegreepostgis-db-${epsg}
     build: 
       context: ./
-      dockerfile: Dockerfile_db
+      dockerfile: Dockerfile_db_${epsg}
     image: deegreepostgis
     volumes:
-      - db_volume:/var/lib/postgresql/data
+      - db-volume-${epsg}:/var/lib/postgresql/data
     ports:
       - "5444:5432"
     restart: always
@@ -17,14 +17,14 @@ services:
       POSTGRES_DB: development
 
   deegree:
-    container_name: deegreepostgis-wfs
+    container_name: deegreepostgis-wfs-${epsg}
     image: geosynchronization/deegree3
     depends_on:
       - postgresql
     ports:
       - "8181:8080"
     volumes:
-      - ./srs/5972/workspace:/deegree
+      - ./srs/${epsg}/workspace:/deegree
     restart: always
     environment:
       DEEGREE_WORKSPACE_ROOT: /deegree
@@ -37,4 +37,6 @@ services:
   #   command: ["dotnet", "CORESubscriber.dll", "add", "${providerurl}", "${username}", "${password}", "/data/${providerSettings}.xml"]
 
 volumes:
-  db_volume:
+  db-volume-5972:
+  db-volume-5973:
+  db-volume-5975:
