@@ -16,7 +16,8 @@ Run the script start_build.cmd
 
 Navigate to http://localhost:8181
 
-Click reload
+Click reload (top of the page, to the right of the active workspace)
+
 
 ### Notes
 
