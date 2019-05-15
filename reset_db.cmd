@@ -1,1 +1,1 @@
-docker volume rm deegreepostgis_db_volume
+docker volume prune
