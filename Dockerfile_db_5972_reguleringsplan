@@ -1,2 +1,0 @@
-FROM mdillon/postgis
-COPY srs/5972/reguleringsplan/init/*.* /docker-entrypoint-initdb.d/

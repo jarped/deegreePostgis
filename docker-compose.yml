@@ -36,7 +36,7 @@ services:
   subscriber:
     depends_on:
       - deegree
-    container_name: geosynchronization-subscriber
+    container_name: geosynchronization-subscriber-${epsg}-${dataset}
     image: geosynchronization/coresubscriber
     volumes:
       - ./subscriber/providers/${providerName}:/provider
@@ -47,7 +47,7 @@ services:
     command: sh -c "crontab /cron/cron; crond -f"
 
   subscriber_config:
-    container_name: geosynchronization-config
+    container_name: geosynchronization-config-${epsg}-${dataset}
     image: geosynchronization/coresubscriber
     volumes:
       - ./subscriber/providers:/providers
@@ -63,6 +63,6 @@ volumes:
   geosynchronization-db-volume-5972-fkb:
   geosynchronization-db-volume-5973-fkb:
   geosynchronization-db-volume-5975-fkb:
-  geosynchronization-db-volume-5972-reguleringsplan:
-  geosynchronization-db-volume-5973-reguleringsplan:
-  geosynchronization-db-volume-5975-reguleringsplan:
+  geosynchronization-db-volume-25832-reguleringsplan:
+  geosynchronization-db-volume-25833-reguleringsplan:
+  geosynchronization-db-volume-25835-reguleringsplan:
