@@ -4,3 +4,4 @@ subscriber/providers
 **/bbox_cache.properties
 .env
 .vscode/*
+tmp
