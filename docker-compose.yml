@@ -2,43 +2,67 @@ version: '3.7'
 
 services:
   postgresql:
-    container_name: deegreepostgis_db
+    depends_on:
+      - subscriber_config
+    container_name: geosynchronization-db-${epsg}-${dataset}
     build: 
       context: ./
-      dockerfile: Dockerfile_db
-    image: deegreepostgis
+      dockerfile: Dockerfile_db_${epsg}_${dataset}
+    image: geosynchronization/postgis-${epsg}-${dataset}
     volumes:
-      - db_volume:/var/lib/postgresql/data
+      - geosynchronization-db-volume-${epsg}-${dataset}:/var/lib/postgresql/data
     ports:
       - "5444:5432"
     restart: always
     environment:
       POSTGRES_PASSWORD: mysecretpassword
-      POSTGRES_DB: development
+      POSTGRES_DB: ${dataset}_${epsg}
 
   deegree:
-    container_name: deegreepostgis_wfs
-    build: 
-      context: ./
-      dockerfile: Dockerfile_wfs
     depends_on:
       - postgresql
-    # image: deegree/deegree3-docker
-    image: deegreepostgis_wfs
+    container_name: geosynchronization-wfs-${epsg}-${dataset}
+    image: geosynchronization/deegree3
+    depends_on:
+      - postgresql
     ports:
       - "8181:8080"
     volumes:
-      - ./workspace:/deegree
+      - ./srs/${epsg}/${dataset}/workspace:/deegree
     restart: always
     environment:
       DEEGREE_WORKSPACE_ROOT: /deegree
 
-  # deegree_cli:
-  #   container_name: deegreepostgis_deegree_cli
-  #   image: geosynchronization/deegreeschemareader
-  #   volumes:
-  #     - ./data:/data
-  #   command: ./convert.sh 5972 http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Tiltak/4.6/FKB-Tiltak46.xsd tiltak
+  subscriber:
+    depends_on:
+      - deegree
+    container_name: geosynchronization-subscriber-${epsg}-${dataset}
+    image: geosynchronization/coresubscriber
+    volumes:
+      - ./subscriber/providers/${providerName}:/provider
+      - ./subscriber/cron:/cron
+    environment:
+      epsg: ${epsg}
+      dataset: ${dataset}
+    command: sh -c "crontab /cron/cron; crond -f"
+
+  subscriber_config:
+    container_name: geosynchronization-config-${epsg}-${dataset}
+    image: geosynchronization/coresubscriber
+    volumes:
+      - ./subscriber/providers:/providers
+    environment:
+      providerurl: ${providerurl}
+      username: ${username}
+      password: ${password}
+      epsg: ${epsg}
+      dataset: ${dataset}
+    command: sh -c "mkdir -p /providers/${providerName}; if [ -s /providers/${providerName}/config.xml ]; then exit 0; fi; dotnet CORESubscriber.dll add ${providerurl} ${username} ${password} /providers/${providerName}/config.template.xml;  cat /providers/${providerName}/config.template.xml | sed 's/<subscribed>False<\/subscribed>/<subscribed>True<\/subscribed>/gi' | sed 's/<wfsClient><\/wfsClient>/<wfsClient>http:\/\/geosynchronization-wfs-${epsg}-${dataset}:8080\/services\/wfs<\/wfsClient>/gi' > /providers/${providerName}/config.xml"
 
 volumes:
-  db_volume:
+  geosynchronization-db-volume-5972-fkb:
+  geosynchronization-db-volume-5973-fkb:
+  geosynchronization-db-volume-5975-fkb:
+  geosynchronization-db-volume-25832-reguleringsplan:
+  geosynchronization-db-volume-25833-reguleringsplan:
+  geosynchronization-db-volume-25835-reguleringsplan:

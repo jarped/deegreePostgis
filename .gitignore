@@ -1,4 +1,7 @@
-development/datasources/feature/bbox_cache.properties
-workspace/development/datasources/feature/bbox_cache.properties
 web/geoinnsyn
 data
+subscriber/providers
+**/bbox_cache.properties
+.env
+.vscode/*
+tmp
