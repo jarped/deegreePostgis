@@ -27,9 +27,9 @@ services:
       - postgresql
     ports:
       - "8181:8080"
-    # volumes:
-    #   - ./srs/${epsg}/${dataset}/workspace:/deegree
     restart: always
+    # volumes:
+    #   - ./dockerfiles/srs/${epsg}/${dataset}/workspace:/deegree
     # environment:
     #   DEEGREE_WORKSPACE_ROOT: /deegree
 
