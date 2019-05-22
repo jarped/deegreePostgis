@@ -23,8 +23,6 @@ services:
       - postgresql
     container_name: geosynchronization-wfs-${epsg}-${dataset}
     image: geosynchronization/deegree3:${epsg}-${dataset}
-    depends_on:
-      - postgresql
     ports:
       - "8181:8080"
     restart: always
@@ -39,29 +37,29 @@ services:
     container_name: geosynchronization-subscriber-${epsg}-${dataset}
     image: geosynchronization/coresubscriber
     volumes:
-      # - providers:/providers/${providerName}
-      - ./subscriber/providers/${providerName}:/provider
-      - ./subscriber/cron:/cron
+      - provider:/provider
+      # - ./subscriber/providers/${providerName}:/provider
+    restart: always
     environment:
       epsg: ${epsg}
       dataset: ${dataset}
-    command: sh -c "crontab /cron/cron; crond -f"
+    command: sh -c "crontab /app/cron; crond -f"
 
   subscriber_config:
     container_name: geosynchronization-config-${epsg}-${dataset}
     image: geosynchronization/coresubscriber
-    # volumes:
-    #   providers:/providers
     volumes:
-      - ./subscriber/providers:/providers
+      - provider:/${providerName}
+    # volumes:
+    #   - ./subscriber/providers:/providers
     environment:
       providerurl: ${providerurl}
       username: ${username}
       password: ${password}
       epsg: ${epsg}
       dataset: ${dataset}
-    command: sh -c "mkdir -p /providers/${providerName}; if [ -s /providers/${providerName}/config.xml ]; then exit 0; fi; dotnet CORESubscriber.dll add ${providerurl} ${username} ${password} /providers/${providerName}/config.template.xml;  cat /providers/${providerName}/config.template.xml | sed 's/<subscribed>False<\/subscribed>/<subscribed>True<\/subscribed>/gi' | sed 's/<wfsClient><\/wfsClient>/<wfsClient>http:\/\/geosynchronization-wfs-${epsg}-${dataset}:8080\/services\/wfs<\/wfsClient>/gi' > /providers/${providerName}/config.xml"
+    command: sh -c "mkdir -p /${providerName}; if [ -s /${providerName}/config.xml ]; then exit 0; fi; dotnet CORESubscriber.dll add ${providerurl} ${username} ${password} /${providerName}/config.template.xml;  cat /${providerName}/config.template.xml | sed 's/<subscribed>False<\/subscribed>/<subscribed>True<\/subscribed>/gi' | sed 's/<wfsClient><\/wfsClient>/<wfsClient>http:\/\/geosynchronization-wfs-${epsg}-${dataset}:8080\/services\/wfs<\/wfsClient>/gi' > /${providerName}/config.xml"
 
 volumes:
-  # providers:
+  provider:
   geosynchronization-db-volume:
