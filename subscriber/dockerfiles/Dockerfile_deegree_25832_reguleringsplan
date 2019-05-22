@@ -1,0 +1,2 @@
+FROM geosynchronization/deegree3
+COPY srs/25832/reguleringsplan/workspace /root/.deegree/

@@ -1,0 +1,2 @@
+FROM geosynchronization/deegree3
+COPY srs/5972/fkb/workspace /root/.deegree/
