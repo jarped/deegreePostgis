@@ -10,7 +10,7 @@ services:
     #   dockerfile: dockerfiles/Dockerfile_db_${epsg}_${dataset}
     image: geosynchronization/postgis:${epsg}-${dataset}
     volumes:
-      - geosynchronization-db-volume-${epsg}-${dataset}:/var/lib/postgresql/data
+      - geosynchronization-db-volume:/var/lib/postgresql/data
     ports:
       - "5444:5432"
     restart: always
@@ -64,9 +64,4 @@ services:
 
 volumes:
   # providers:
-  geosynchronization-db-volume-5972-fkb:
-  geosynchronization-db-volume-5973-fkb:
-  geosynchronization-db-volume-5975-fkb:
-  geosynchronization-db-volume-25832-reguleringsplan:
-  geosynchronization-db-volume-25833-reguleringsplan:
-  geosynchronization-db-volume-25835-reguleringsplan:
+  geosynchronization-db-volume:
