@@ -5,9 +5,6 @@ services:
     depends_on:
       - subscriber_config
     container_name: geosynchronization-db-${epsg}-${dataset}
-    # build: 
-    #   context: ./
-    #   dockerfile: dockerfiles/Dockerfile_db_${epsg}_${dataset}
     image: geosynchronization/postgis:${epsg}-${dataset}
     volumes:
       - geosynchronization-db-volume:/var/lib/postgresql/data
@@ -26,10 +23,7 @@ services:
     ports:
       - "8181:8080"
     restart: always
-    # volumes:
-    #   - ./dockerfiles/srs/${epsg}/${dataset}/workspace:/deegree
-    # environment:
-    #   DEEGREE_WORKSPACE_ROOT: /deegree
+    command: sh -c "sleep 60; /usr/local/tomcat/bin/catalina.sh run"
 
   subscriber:
     depends_on:
@@ -38,7 +32,6 @@ services:
     image: geosynchronization/coresubscriber
     volumes:
       - provider:/provider
-      # - ./subscriber/providers/${providerName}:/provider
     restart: always
     environment:
       epsg: ${epsg}
@@ -50,8 +43,6 @@ services:
     image: geosynchronization/coresubscriber
     volumes:
       - provider:/${providerName}
-    # volumes:
-    #   - ./subscriber/providers:/providers
     environment:
       providerurl: ${providerurl}
       username: ${username}
