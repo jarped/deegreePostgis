@@ -23,7 +23,7 @@ services:
     ports:
       - "8181:8080"
     restart: always
-    command: sh -c "sleep 60; /usr/local/tomcat/bin/catalina.sh run"
+    command: sh -c "sleep 120; /usr/local/tomcat/bin/catalina.sh run"
 
   subscriber:
     depends_on:
@@ -31,7 +31,8 @@ services:
     container_name: geosynchronization-subscriber-${epsg}-${dataset}
     image: geosynchronization/coresubscriber
     volumes:
-      - provider:/provider
+      # - provider:/provider
+      - ./provider:/provider
     restart: always
     environment:
       epsg: ${epsg}
@@ -42,15 +43,16 @@ services:
     container_name: geosynchronization-config-${epsg}-${dataset}
     image: geosynchronization/coresubscriber
     volumes:
-      - provider:/${providerName}
+      # - provider:/${providerName}
+      - ./provider:/provider
     environment:
       providerurl: ${providerurl}
       username: ${username}
       password: ${password}
       epsg: ${epsg}
       dataset: ${dataset}
-    command: sh -c "mkdir -p /${providerName}; if [ -s /${providerName}/config.xml ]; then exit 0; fi; dotnet CORESubscriber.dll add ${providerurl} ${username} ${password} /${providerName}/config.template.xml;  cat /${providerName}/config.template.xml | sed 's/<subscribed>False<\/subscribed>/<subscribed>True<\/subscribed>/gi' | sed 's/<wfsClient><\/wfsClient>/<wfsClient>http:\/\/geosynchronization-wfs-${epsg}-${dataset}:8080\/services\/wfs<\/wfsClient>/gi' > /${providerName}/config.xml"
+    command: sh -c "mkdir -p /provider; if [ -s /provider/config.xml ]; then exit 0; fi; dotnet CORESubscriber.dll add ${providerurl} ${username} ${password} /provider/config.template.xml;  cat /provider/config.template.xml | sed 's/<subscribed>False<\/subscribed>/<subscribed>True<\/subscribed>/gi' | sed 's/<wfsClient><\/wfsClient>/<wfsClient>http:\/\/geosynchronization-wfs-${epsg}-${dataset}:8080\/services\/wfs<\/wfsClient>/gi' > /provider/config.xml || exit 1"
 
 volumes:
-  provider:
+  # provider:
   geosynchronization-db-volume:
