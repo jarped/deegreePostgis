@@ -12,7 +12,7 @@ services:
       - "5444:5432"
     restart: always
     environment:
-      POSTGRES_PASSWORD: mysecretpassword
+      POSTGRES_PASSWORD: ${postgresPassword}
       POSTGRES_DB: ${dataset}_${epsg}
 
   deegree:
@@ -51,7 +51,8 @@ services:
       password: ${password}
       epsg: ${epsg}
       dataset: ${dataset}
-    command: sh -c "mkdir -p /provider; if [ -s /provider/config.xml ]; then exit 0; fi; dotnet CORESubscriber.dll add ${providerurl} ${username} ${password} /provider/config.template.xml;  cat /provider/config.template.xml | sed 's/<subscribed>False<\/subscribed>/<subscribed>True<\/subscribed>/gi' | sed 's/<wfsClient><\/wfsClient>/<wfsClient>http:\/\/geosynchronization-wfs-${epsg}-${dataset}:8080\/services\/wfs<\/wfsClient>/gi' > /provider/config.xml || exit 1"
+    # command: sh -c "mkdir -p /provider; if [ -s /provider/config.xml ]; then exit 0; fi; dotnet CORESubscriber.dll add ${providerurl} ${username} ${password} /provider/config.template.xml;  cat /provider/config.template.xml | sed 's/<subscribed>False<\/subscribed>/<subscribed>True<\/subscribed>/gi' | sed 's/<wfsClient><\/wfsClient>/<wfsClient>http:\/\/geosynchronization-wfs-${epsg}-${dataset}:8080\/services\/wfs<\/wfsClient>/gi' > /provider/config.xml || exit 1"
+    command: sh -c "mkdir -p /provider; if [ -s /provider/config.xml ]; then exit 0; fi; dotnet CORESubscriber.dll add ${providerurl} ${username} ${password} /provider/config.template.xml;  cat /provider/config.template.xml | sed 's/<wfsClient><\/wfsClient>/<wfsClient>http:\/\/geosynchronization-wfs-${epsg}-${dataset}:8080\/services\/wfs<\/wfsClient>/gi' > /provider/config.xml || exit 1"
 
 volumes:
   # provider:
