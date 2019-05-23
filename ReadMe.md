@@ -84,6 +84,7 @@ As per this version the naming the containers prevents us from spinning up more 
 
 https://github.com/jarped/deegreePostgis/issues/4
 
+# Notes
 ## Deegree start-up
 The deegree-container will spin up, but will wait a couple of minutes before starting deegree. This is to ensure that the database has had time to create the schemas. This is good enough for now, but not optimal
 
