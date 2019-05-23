@@ -27,7 +27,7 @@ Download https://github.com/jarped/deegreePostgis/archive/geosync.zip
 Unzip to a folder
 
 
-## Config
+## Config deegreePostgis
 
 Create a file named .env and fill it with the following values:
 ``` 
@@ -58,18 +58,22 @@ OR
 
 run ``` docker-compose up```  from the folder containing docker-compose.yml
 
-### Notes
-
-#### Config
+## Config subscriber
 The subscriber will not attempt to subscribe to any datasets on a provider. Review the config.xml-file corresponding to the provider and  set subscribed to True for any datasets want.
 
-#### Stopping
+## Stopping
 To stop gracefully use stop.cmd or docker-compose down. Stopping containers risks the subscriber hanging if it was in the middle of syncing. If this happens, do the following after you started again:
 ```
 docker exec ${subscriberContainer} rm /app/working
 ```
 
-#### Limitations
+## Resetting
+As the database is linked to a volume it will remember where it was when stopping and starting again. If you wasnt to really reset the dataset, the easiest way is to delete the corresponding volume. Use ```docker volume ls``` to see all volumes or ```docker volume prune``` to delete any unused volumes, Note that this deletes all volumes not used by any containers, so be certain before doing this.
+
+After deleting the database you will also need to reset the config.xml in the provider-folder. Deleting or renaming this file will make the subscriber generate a new file on the next start. This will need to be edited to turn on the datasets you want to subscribe to.
+
+
+# Limitations
 
 As per this version the naming of the containers prevents us from spinnig up more than one instance of these containers.
 
