@@ -60,7 +60,7 @@ dataset=fkb
 ```start.cmd``` or ```docker-compose up```  from the folder containing docker-compose.yml
 
 # Config subscriber
-The subscriber will not attempt to subscribe to any datasets out of the box. To turn on subscription, edit config.xml in the provider-folder and set subscribed to True for any datasets you want to subscribe to.
+The subscriber will not attempt to subscribe to any datasets out of the box. To turn on subscription, edit ```config.xml``` in the ```provider```-folder and set ```subscribed``` to ```True``` for any datasets you want to subscribe to.
 
 # Stopping
 To stop gracefully use ```stop.cmd``` or ```docker-compose down```. Stopping containers risks the subscriber hanging if it was in the middle of syncing. If this happens, do the following after you started again:
@@ -75,11 +75,17 @@ Another way is to use ```reset_db.cmd``` or ```docker volume prune``` to delete 
 
 ### Note that this deletes all volumes not used by any containers, so be certain before doing this.
 
-After deleting the database you will also need to reset the config.xml in the provider-folder. Deleting or renaming this file will make the subscriber generate a new file on the next start. This will need to be edited to turn on the datasets you want to subscribe to.
+After deleting the database you will also need to reset the ```config.xml``` in the ```provider```-folder. Deleting or renaming this file will make the subscriber generate a new file on the next start. This will need to be edited to turn on the datasets you want to subscribe to.
 
 
 # Limitations
-
+## Multiple instances
 As per this version the naming the containers prevents us from spinning up more than one instance per combination of epsg and dataset. See issue #4 for info about any solutions to this:
 
 https://github.com/jarped/deegreePostgis/issues/4
+
+## Deegree start-up
+The deegree-container will spin up, but will wait a couple of minutes before starting deegree. This is to ensure that the database has had time to create the schemas. This is good enough for now, but not optimal
+
+## Subscriber cron-file
+The subscriber comes with a cron-file that looks for a config.xml in its ```/provider```-folder. This cron-file is set to run every minute and has a lock-file named ```working``` residing in ```/app```.
