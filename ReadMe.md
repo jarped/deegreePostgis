@@ -69,7 +69,7 @@ docker exec ${subscriberContainer} rm /app/working
 ```
 
 # Resetting
-As the database is linked to a volume it will remember where it was when stopping and starting again. If you want to reset the dataset, the easiest way is to delete the corresponding volume. Use ```docker volume ls``` to see all volumes and follow by ```docker volume rm ${volumeName}```.
+As the database is linked to a volume it will remember where it was when stopping and starting again. If you want to reset the dataset, the easiest way is to delete the corresponding volume. Use ```docker volume ls``` to see all volumes. Identify which volume you want, by using the naming-convention ```${folderName}_geosynchronization-db-volume```, and follow by ```docker volume rm ${volumeName}```.
 
 Another way is to use ```reset_db.cmd``` or ```docker volume prune``` to delete any unused volumes.
 
