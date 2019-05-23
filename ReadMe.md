@@ -52,11 +52,7 @@ dataset=fkb
 
 ## Starting first time
 
-Run the script start_build.cmd
-
-OR
-
-run ```docker-compose up```  from the folder containing docker-compose.yml
+```start.cmd``` or ```docker-compose up```  from the folder containing docker-compose.yml
 
 ## Config subscriber
 The subscriber will not attempt to subscribe to any datasets on a provider. Review the config.xml-file corresponding to the provider and  set subscribed to True for any datasets want.
