@@ -29,10 +29,10 @@ providerName=providerName
 providerurl=https://some-url-to-provider 
 
 # Username
-username=Username 
+username=providerUsername 
 
 # Password
-password=Password 
+password=providerPassword 
 
 # Epsg-code ( 5972 | 5973 | 5975 )
 epsg=5972 
