@@ -62,7 +62,7 @@ run ```docker-compose up```  from the folder containing docker-compose.yml
 The subscriber will not attempt to subscribe to any datasets on a provider. Review the config.xml-file corresponding to the provider and  set subscribed to True for any datasets want.
 
 ## Stopping
-To stop gracefully use ```stop.cmd``` or ```docker-compose dow```. Stopping containers risks the subscriber hanging if it was in the middle of syncing. If this happens, do the following after you started again:
+To stop gracefully use ```stop.cmd``` or ```docker-compose down```. Stopping containers risks the subscriber hanging if it was in the middle of syncing. If this happens, do the following after you started again:
 ```
 docker exec ${subscriberContainer} rm /app/working
 ```
