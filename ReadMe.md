@@ -1,18 +1,22 @@
 # Docker-compose for GeoSynkchronization of FKB-data
 
 ## Prerequisites
-Docker:
+### Docker
+#### Windows
 
 https://docs.docker.com/docker-for-windows/install/
 
-## Installation
+#### Linux
 
-Via git:
+Figure it out ;)
+
+## Installation
+### git
 ``` 
 git clone https://github.com/jarped/deegreePostgis.git
 ``` 
 
-As zip:
+### zip
 
 Download https://github.com/jarped/deegreePostgis/archive/geosync.zip
 Unzip to a folder
