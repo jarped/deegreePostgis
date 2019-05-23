@@ -68,7 +68,9 @@ docker exec ${subscriberContainer} rm /app/working
 ```
 
 ## Resetting
-As the database is linked to a volume it will remember where it was when stopping and starting again. If you wasnt to really reset the dataset, the easiest way is to delete the corresponding volume. Use ```docker volume ls``` to see all volumes or ```docker volume prune``` to delete any unused volumes, Note that this deletes all volumes not used by any containers, so be certain before doing this.
+As the database is linked to a volume it will remember where it was when stopping and starting again. If you want to reset the dataset, the easiest way is to delete the corresponding volume. Use ```docker volume ls``` to see all volumes or ```docker volume prune``` to delete any unused volumes.
+
+#### Note that this deletes all volumes not used by any containers, so be certain before doing this.
 
 After deleting the database you will also need to reset the config.xml in the provider-folder. Deleting or renaming this file will make the subscriber generate a new file on the next start. This will need to be edited to turn on the datasets you want to subscribe to.
 
