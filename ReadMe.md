@@ -77,16 +77,24 @@ Another way is to use ```reset_db.cmd``` or ```docker volume prune``` to delete 
 
 After deleting the database you will also need to reset the ```config.xml``` in the ```provider```-folder. Deleting or renaming this file will make the subscriber generate a new file on the next start. This will need to be edited to turn on the datasets you want to subscribe to.
 
+# Notes
+## Deegree start-up
+The deegree-container will spin up, but will wait a couple of minutes before starting deegree. This is to ensure that the database has had time to create the schemas. This is good enough for now, but not optimal.
 
+## Subscriber cron-file
+The subscriber comes with a ```cron```-file that looks for ```config.xml``` in its ```/provider```-folder. This ```cron```-file is set to run every minute and has a lock-file named ```working``` residing in ```/app```.
+
+## Ports
+Feel free to edit ports in ```docker-compose.yml```. Changing this is a prerequisite if you have more than one instance running.
+### Database
+The database is mapped to 5444 on localhost
+
+### Deegree
+Deegree is mapped to 8181 on localhost
 # Limitations
 ## Multiple instances
 As per this version the naming the containers prevents us from spinning up more than one instance per combination of epsg and dataset. See issue #4 for info about any solutions to this:
 
 https://github.com/jarped/deegreePostgis/issues/4
 
-# Notes
-## Deegree start-up
-The deegree-container will spin up, but will wait a couple of minutes before starting deegree. This is to ensure that the database has had time to create the schemas. This is good enough for now, but not optimal
 
-## Subscriber cron-file
-The subscriber comes with a ```cron```-file that looks for ```config.xml``` in its ```/provider```-folder. This ```cron```-file is set to run every minute and has a lock-file named ```working``` residing in ```/app```.
