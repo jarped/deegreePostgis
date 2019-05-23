@@ -18,7 +18,7 @@ Download https://github.com/jarped/deegreePostgis/archive/geosync.zip
 Unzip to a folder
 
 
-## Usage
+## Config
 
 Create a file named .env and fill it with the following values:
 ``` 
@@ -45,10 +45,9 @@ dataset=fkb
 
 Run the script start_build.cmd
 
-Navigate to http://localhost:8181
+OR
 
-Click reload (top of the page, to the right of the active workspace)
-
+run ``` docker-compose up```  from the folder containing docker-compose.yml
 
 ### Notes
 
