@@ -88,4 +88,4 @@ https://github.com/jarped/deegreePostgis/issues/4
 The deegree-container will spin up, but will wait a couple of minutes before starting deegree. This is to ensure that the database has had time to create the schemas. This is good enough for now, but not optimal
 
 ## Subscriber cron-file
-The subscriber comes with a cron-file that looks for a config.xml in its ```/provider```-folder. This cron-file is set to run every minute and has a lock-file named ```working``` residing in ```/app```.
+The subscriber comes with a ```cron```-file that looks for ```config.xml``` in its ```/provider```-folder. This ```cron```-file is set to run every minute and has a lock-file named ```working``` residing in ```/app```.
