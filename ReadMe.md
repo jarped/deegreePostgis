@@ -55,7 +55,7 @@ dataset=fkb
 ```start.cmd``` or ```docker-compose up```  from the folder containing docker-compose.yml
 
 ## Config subscriber
-The subscriber will not attempt to subscribe to any datasets on a provider. To turn on subscription, edit config.xml in the provider-folder and set subscribed to True for any datasets you want to subscribe to.
+The subscriber will not attempt to subscribe to any datasets out of the box. To turn on subscription, edit config.xml in the provider-folder and set subscribed to True for any datasets you want to subscribe to.
 
 ## Stopping
 To stop gracefully use ```stop.cmd``` or ```docker-compose down```. Stopping containers risks the subscriber hanging if it was in the middle of syncing. If this happens, do the following after you started again:
