@@ -75,8 +75,6 @@ After deleting the database you will also need to reset the config.xml in the pr
 
 # Limitations
 
-As per this version the naming of the containers prevents us from spinnig up more than one instance of these containers.
-
-See issue #4
+As per this version the naming the containers prevents us from spinnig up more than one instance per combination of epsg and dataset. See issue #4 for info about any solutions to this:
 
 https://github.com/jarped/deegreePostgis/issues/4
