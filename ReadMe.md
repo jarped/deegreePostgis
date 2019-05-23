@@ -9,6 +9,14 @@ https://docs.docker.com/docker-for-windows/install/
 Figure it out ;)
 
 # Installation
+## minimal
+### Note
+This way you need to use docker-commands and not any of the .cmd-files, but if you use this approach you already knew that
+
+Download https://github.com/jarped/deegreePostgis/raw/geosync/docker-compose.yml
+
+Put in folder
+
 ## git
 ``` 
 git clone https://github.com/jarped/deegreePostgis.git
@@ -23,7 +31,6 @@ git clone https://github.com/jarped/deegreePostgis.git ${folderName}
 Download https://github.com/jarped/deegreePostgis/archive/geosync.zip
 
 Unzip to a folder
-
 
 # Config deegreePostgis
 
