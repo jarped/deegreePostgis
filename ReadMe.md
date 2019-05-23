@@ -68,7 +68,9 @@ docker exec ${subscriberContainer} rm /app/working
 ```
 
 ## Resetting
-As the database is linked to a volume it will remember where it was when stopping and starting again. If you want to reset the dataset, the easiest way is to delete the corresponding volume. Use ```docker volume ls``` to see all volumes or ```docker volume prune``` to delete any unused volumes.
+As the database is linked to a volume it will remember where it was when stopping and starting again. If you want to reset the dataset, the easiest way is to delete the corresponding volume. Use ```docker volume ls``` to see all volumes and follow by ```docker volume rm ${volumeName}```.
+
+Another way is to use ```reset_db.cmd``` or ```docker volume prune``` to delete any unused volumes.
 
 #### Note that this deletes all volumes not used by any containers, so be certain before doing this.
 
